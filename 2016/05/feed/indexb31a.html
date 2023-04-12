@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2016/05/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Thu, 26 May 2016 00:52:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 2.3.0 alpha2 released</title>
+		<link>https://z-push.org/z-push-2-3-0-alpha2-released/</link>
+					<comments>https://z-push.org/z-push-2-3-0-alpha2-released/#comments</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Thu, 26 May 2016 00:48:44 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=386</guid>
+
+					<description><![CDATA[Hi all, we don&#8217;t usually publish news on alpha or beta releases, but it is a big step in Z-Push development and we thought it was worth it. After more than one year of intensive development, we just released Z-Push 2.3.0 alpha2 (tag 2.3.0alpha2, commit 595d6f2394cd81040f20d8aaf93a7c45e4ed7b7b). There are many new features, like Z-Push packages and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>we don&#8217;t usually publish news on alpha or beta releases, but it is a big step in Z-Push development and we thought it was worth it.</p>
+<p>After more than one year of intensive development, we just released Z-Push 2.3.0 alpha2 (tag 2.3.0alpha2, commit 595d6f2394cd81040f20d8aaf93a7c45e4ed7b7b).<br />
+There are many new features, like Z-Push packages and repositories, MySQL and memcache support for states, improved Outlook compatibility (KOE) and especially: a vast speed improvement!<br />
+We would like to thank a lot our community contributors Etienne, Francisco, Nicolas, Ralf and Vincent who helped to make this possible!</p>
+<p><strong>Upgrade procedure</strong><br />
+You can directly upgrade from any Z-Push 2.2.x. <strong>After the upgrade, &#8220;z-push-admin -a fixstates&#8221; needs to be executed once!</strong> Else the Ping request will not block and devices will sync continuously.<br />
+After the fixstates all mobiles will work normally and Ping will be blocking as expected.</p>
+<p><strong>This version introduces new features that are partially not downgradable.</strong> A limited downgrade is possible.<br />
+In order to use all new features (especially for Outlook users) existing profiles must be completely re-synchronized, e.g. via &#8220;z-push-admin -a resync -u username&#8221;.<br />
+After the resync the devices use a new type of folderids (short ids) which are not compatible with Z-Push 2.2.x anymore.<br />
+Re-synchronized profiles or newly connected devices (after the upgrade to 2.3.0) will not work properly when downgrading to Z-Push 2.2.x. These devices will be re-synchronized again automatically.<br />
+There is no need to perform the resync immediately. Profiles created with 2.2.x will work normally with 2.3.0, but not all new features will be available.</p>
+<p><strong>Blackberry 10 users</strong>: our tests have shown that a server side resync as described here is not enough for BB10 devices to work reliably. You need to remove and re-create the profile on these devices.<br />
+BB seems to cache old folderids which causes sync inconsistencies. Ideally: (1) remove profile from BB (2) remove state on server (3) create the profile on the BB again.<br />
+Existing Blackberry profiles will work normally with 2.3.0, but at some point they should be re-synchronized &amp; recreated.</p>
+<p>The z-push tarball is available normally, but we encourage you to use the z-push repositories and packages.<br />
+More information about the installation from repositories and packages is available here: <a href="https://wiki.z-hub.io/display/ZP/Installation">https://wiki.z-hub.io/display/ZP/Installation</a></p>
+<p>The full changelog is available at: <a href="http://download.z-push.org/beta/2.3/z-push-2.3.0-alpha2.txt">http://download.z-push.org/beta/2.3/z-push-2.3.0-alpha2.txt</a></p>
+<p>You can download the Z-Push 2.3.0 alpha2 tarball here: <a href="http://download.z-push.org/beta/2.3/">http://download.z-push.org/beta/2.3/</a></p>
+<p>Please share your experiences and give feedback!</p>
+<p>Greetings,<br />
+Sebastian<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-3-0-alpha2-released/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Z-Push 2.2.10 final released</title>
+		<link>https://z-push.org/z-push-2-2-10-final-released/</link>
+					<comments>https://z-push.org/z-push-2-2-10-final-released/#comments</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Wed, 04 May 2016 23:55:28 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=382</guid>
+
+					<description><![CDATA[Hi all, today we have released the Z-Push 2.2.10 final version (tag 2.2.10, commit 2ec6d9b575f60a901c7f2d97707d5c6a1a537603). Once again we thank all contributors for their work on this release. Important notes This version contains some fixes and improvements. Outlook via ActiveSync now correctly synchronizes all data and doesn&#8217;t occasionally stop before showing any data. Z-Push now supports [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>today we have released the Z-Push 2.2.10 final version (tag 2.2.10, commit 2ec6d9b575f60a901c7f2d97707d5c6a1a537603). Once again we thank all contributors for their work on this release.</p>
+<p><strong>Important notes</strong><br />
+This version contains some fixes and improvements.</p>
+<p>Outlook via ActiveSync now correctly synchronizes all data and doesn&#8217;t occasionally stop before showing any data.<br />
+Z-Push now supports out of office start and end times.<br />
+The issue that the users with a special chars in the user names weren&#8217;t able to login on mobile device should be fixed now.</p>
+<p>Some other improvements.</p>
+<p>The full change log is available <a href="http://download.z-push.org/final/2.2/z-push-2.2.10.txt">here</a>.</p>
+<p>The version is available at: <a href="http://download.z-push.org/final/2.2/">http://download.z-push.org/final/2.2/</a>.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,<br />
+Manfred<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-2-10-final-released/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

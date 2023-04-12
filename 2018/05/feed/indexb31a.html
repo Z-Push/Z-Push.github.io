@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2018/05/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Wed, 23 May 2018 17:19:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 2.4.2 final release</title>
+		<link>https://z-push.org/z-push-2-4-2-final-release/</link>
+					<comments>https://z-push.org/z-push-2-4-2-final-release/#respond</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Wed, 23 May 2018 17:19:43 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=604</guid>
+
+					<description><![CDATA[Hello, we have just released Z-Push 2.4.2 final** (tag 2.4.2 commit e2a70a79747c8004701f7c915b18587b79f7c59d). This is a maintenance release with some bugfixes and improvements. We have improved Z-Push packages. For debian-based systems Felix changed the dependency handling. RHEL-based systems now should have the correct permissions and ownership for state and log folders. Please check carefully if everything [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hello,</p>
+<p>we have just released <strong>Z-Push 2.4.2 final</strong>** (tag 2.4.2 commit e2a70a79747c8004701f7c915b18587b79f7c59d).</p>
+<p>This is a maintenance release with some bugfixes and improvements.</p>
+<p>We have improved Z-Push packages. For debian-based systems Felix changed the dependency handling.<br />
+RHEL-based systems now should have the correct permissions and ownership for state and log folders. Please check carefully if everything works as expected.</p>
+<p>In certain cases Z-Push triggers folder re-sync if the client requests deletion a lot of items. Sometimes this a desired behaviour and the folder re-sync is not necessary. Michele added new feature to take a threshold into account. Check [Z-Push Wiki](https://wiki.z-hub.io/display/ZP/Hidden+configuration+parameters) for more information.</p>
+<p>For the Kopano backend we fixed saving picture for a contact created on mobile and unsetting properties for tasks.</p>
+<p>Niels added authentication with GSSAPI support for IMAP servers. Therefore changes in the config of the IMAP backend might be necessary.</p>
+<p>Bart fixed several bugs for imap and caldav backends.</p>
+<p>Thank you all for the contributions!</p>
+<p>Install Z-Push 2.4.2 from the final repositories (recommended) <a href="https://wiki.z-hub.io/display/ZP/Installation">https://wiki.z-hub.io/display/ZP/Installation</a>.</p>
+<p>The complete changelog is available <a href="https://forum.kopano.io/topic/1399/z-push-2-4-2-final-released" rel="noopener" target="_blank">here</a>.</p>
+<p>Code changes since Z-Push 2.4.1: <a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.1&#038;sourceBranch=refs%2Ftags%2F2.4.2" rel="noopener" target="_blank">https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.1&#038;sourceBranch=refs%2Ftags%2F2.4.2</a></p>
+<p>Please share your experiences (positive and negative) and give feedback!</p>
+<p>Greetings,<br />
+Manfred</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-4-2-final-release/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Z-Push 2.3 end of life</title>
+		<link>https://z-push.org/z-push-2-3-end-of-life/</link>
+					<comments>https://z-push.org/z-push-2-3-end-of-life/#respond</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Mon, 14 May 2018 15:22:14 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=602</guid>
+
+					<description><![CDATA[Hi all, if you are already using some Z-Push 2.4.X version you can skip this announcement. If you are running Z-Push 2.3.X, please plan an upgrade to the most recent Z-Push 2.4. We will deprecate Z-Push 2.3 on the 30th of June 2018. Its last stable version 2.3.9 was released in February and already contained [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>if you are already using some Z-Push 2.4.X version you can skip this announcement. If you are running Z-Push 2.3.X, please plan an upgrade to the most recent Z-Push 2.4.</p>
+<p><strong>We will deprecate Z-Push 2.3 on the 30th of June 2018.</strong> Its last stable version 2.3.9 was released in February and already contained only important fixes backported from Z-Push 2.4. The active development on 2.3 ceased about 6 months ago. If there are any issues with 2.3 versions, we will fix them as part of some 2.4 release. There will be no further 2.3.X releases. We will of course provide upgrade support after the deprecation day.</p>
+<p>For now we don&#8217;t have any plans to remove the downloads of the old versions. The old-final repository will continue as well, until there will be Z-Push 2.5 release. At this point we will move Z-Push 2.4 to old-final.</p>
+<p>The upgrade from 2.3 to 2.4 is pretty painless and there are a lot of new features and improvements. Try it out if you haven&#8217;t yet!</p>
+<p>Manfred</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-3-end-of-life/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

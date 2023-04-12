@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2015/02/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Wed, 11 Feb 2015 17:24:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 2.2 final released</title>
+		<link>https://z-push.org/z-push-2-2-final-released/</link>
+					<comments>https://z-push.org/z-push-2-2-final-released/#comments</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Wed, 11 Feb 2015 17:12:04 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=320</guid>
+
+					<description><![CDATA[Hi all, today we have released the Z-Push 2.2 final version (build 1934). Important notes This version adds some new features. First is the support for autodiscover which will ease the configuration of the mobile devices. Please refer to INSTALL file in the autodiscover folder for configuration. We made some improvements for FolderSync runtime for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<pre>Hi all,
+
+today we have released the Z-Push 2.2 final version (build 1934).
+
+<strong>Important notes</strong>
+This version adds some new features.
+First is the support for autodiscover which will ease the configuration of the
+mobile devices. Please refer to INSTALL file in the autodiscover folder for
+configuration.
+
+We made some improvements for FolderSync runtime for Zarafa backend. It is optimized
+for a ZCP version 7.1.11 or later. The correct functionality with an earlier
+ZCP version is not guaranteed.
+
+We also added chunked folder sync support. It should solve the issue that the
+sync with android devices wasn't possible for users with a lot of (several
+hundreds) folders. Please read the notes in the config.php for
+USE_PARTIAL_FOLDERSYNC. This feature is disabled per default.
+
+Also some minor fixes like appointments with "working elsewhere" status weren't
+synced to the mobile device, removed svn executable property from several files.
+
+<strong>Changes since Z-Push 2.1.3</strong>
+
+General
+[ZP-42] - Z-Push AutoDiscover
+[ZP-543] - Remove svn executable property from files
+
+Zarafa
+[ZP-269] - Look for enabled/disabled z-push feature in ZCP
+[ZP-510] - Showing appointment in Outlook as "working elsewhere" removes appointment from agenda
+[ZP-567] - Cache store and inbox properties for FolderSync
+
+The version is available at: <a title="http://download.z-push.org/final/2.2/" href="http://download.z-push.org/final/2.2/">http://download.z-push.org/final/2.2/</a>.
+
+Your feedback is highly appreciated.
+
+Kind regards,
+Manfred
+Z-Push dev team</pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-2-final-released/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

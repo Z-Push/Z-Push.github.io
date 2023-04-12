@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2012/06/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Sun, 02 Feb 2014 12:55:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 1 future</title>
+		<link>https://z-push.org/z-push-1-future/</link>
+					<comments>https://z-push.org/z-push-1-future/#respond</comments>
+		
+		<dc:creator><![CDATA[Manfred]]></dc:creator>
+		<pubDate>Thu, 28 Jun 2012 12:00:21 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://62.245.227.250/?p=104</guid>
+
+					<description><![CDATA[Hi all, with the release of Z-Push 2.0 final on the 21st of June 2012 we have reached a new milestone in the Z-Push development. In this post I would like to share our view regarding Z-Push 1 and what is going to happen with it. We have ceased the development of the new features [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>with the release of Z-Push 2.0 final on the 21st of June 2012 we have reached a new milestone in the Z-Push development. In this post I would like to share our view regarding Z-Push 1 and what is going to happen with it. We have ceased the development of the new features for Z-Push 1 in order to put our complete effort into Z-Push 2 development. We encourage you to migrate to Z-Push 2 already as it has improved in many aspects and the debugging of issues is also easier for us. We will merge the fixes back into Z-Push 1 where possible and also fix the issues which aren&#8217;t too complex. This complementary support will be available for about 6 months until the 31st of December 2012. Afterwards we will offer upgrade support only.</p>
+<p>Greets, Manfred<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-1-future/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Z-Push 2.0 final released</title>
+		<link>https://z-push.org/101/</link>
+					<comments>https://z-push.org/101/#respond</comments>
+		
+		<dc:creator><![CDATA[Manfred]]></dc:creator>
+		<pubDate>Thu, 21 Jun 2012 12:00:22 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://62.245.227.250/?p=101</guid>
+
+					<description><![CDATA[Hi all, after 1,5 years of development we are happy to announce Z-Push 2.0 final. Some of the new features: &#8211; supports ActiveSync version 14, allowing full HTML email synchronization on all capable devices. &#8211; possibility to set/unset your out-of-office settings on your mobile (not all devices support this feature) &#8211; &#8220;z-push-top&#8221; tool which shows [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>after 1,5 years of development we are happy to announce Z-Push 2.0 final.</p>
+<p>Some of the new features:<br />
+&#8211; supports ActiveSync version 14, allowing full HTML email synchronization on all capable devices.<br />
+&#8211; possibility to set/unset your out-of-office settings on your mobile (not all devices support this feature)<br />
+&#8211; &#8220;z-push-top&#8221; tool which shows top-like informations about currently connected devices and their activity<br />
+&#8211; a real real-time notification mechanism for the Zarafa Backend (requires ZCP 7.0.6 or higher)<br />
+&#8211; performs semantic data checks before sending data to a mobile<br />
+&#8211; identifies and fixes or ignores broken items<br />
+&#8211; bi-directional and inter process loop detection<br />
+&#8211; server side search in emails which are not on the phone<br />
+&#8211; meeting organizer sees the status of attendees (accepted/declined/tentatively) on the phone<br />
+&#8211; notes synchronization (only available for some clients e.g. Touchdown on Android)<br />
+&#8211; heartbeat and partial synchronization support<br />
+&#8211; support of recurring tasks (Mantis #125)<br />
+&#8211; global synchronization of the Public Folder (Mantis #198)<br />
+&#8211; improved logging (loglevels, logs on user level possible)<br />
+&#8211; introducing the &#8220;combined&#8221; backend</p>
+<p>There is a lot of new code regarding the ActiveSync 14 support. Many synchronization mechanisms have changed.<br />
+We also switched our Bugtracker. From this version on all tickets will be found at <a href="http://jira.zarafa.com/browse/ZP">http://jira.zarafa.com/browse/ZP</a>.</p>
+<p>We would like to thank everybody who contributed with testing and reporting of issues and ideas<br />
+especially Jan aka deHoeninger, Vincent aka liverpoolfcfan, Erwin aka ebogaard,<br />
+Uwe aka uwe347, Niels aka nprzybilla, Paul aka pfloor and Bert.<br />
+We would also like to thank dw2412 – Andreas Brodowski – for his work on the AS12 branch. A few code blocks of his branch made it into the release.<br />
+Apologies and a big thank you if we have forgotten someone.</p>
+<p>An updated version of the Mobile Device Management Plugin for the Zarafa Webaccess,<br />
+which supports Z-Push 2, was also released.<br />
+It has a new feature which allows resynchronisation of the mobile devices.<br />
+Please check the Community Hub for more information:<br />
+<a href="http://z-push.sf.net/mdmplugin">http://z-push.sf.net/mdmplugin</a></p>
+<p>There is no upgrade path for Z-Push 1.x versions, but as this version implements<br />
+a fully automatic resynchronizing of devices in the case states are missing or faulty,<br />
+you should upgrade _without_ maintaining the existing states.</p>
+<p>The state directory is by default /var/lib/z-push, the log directory /var/log/z-push.<br />
+Please create these directories and make them writeable for apache or<br />
+change the configuration parameters to your needs.</p>
+<p>Be aware that if you are using LOGLEVEL_DEBUG and LOGLEVEL_WBXML Z-Push will be quite talkative, so it is advisable to use log-rotate on the log file.</p>
+<p>The complete changelog is available at: <a href="http://zarafa-deutschland.de/z-push-download/final/2.0/z-push-2.0-1346.txt">http://zarafa-deutschland.de/z-push-download/final/2.0/z-push-2.0-1346.txt</a>.</p>
+<p>The version is available at: <a href="http://z-push.sourceforge.net/download">http://z-push.sourceforge.net/download</a>.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,<br />
+Manfred<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/101/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Z-Push 2.0RC released</title>
+		<link>https://z-push.org/z-push-2-0rc-released/</link>
+					<comments>https://z-push.org/z-push-2-0rc-released/#respond</comments>
+		
+		<dc:creator><![CDATA[Manfred]]></dc:creator>
+		<pubDate>Tue, 12 Jun 2012 12:00:33 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://62.245.227.250/?p=99</guid>
+
+					<description><![CDATA[Hi all, we just released Z-Push 2.0 RC (build 1333). Notes This version fixes issues with Playbook&#8217;s and Androids&#8217; (&#62;=4.0.3) calendar. It also fixes the issue that a forwarded message has been truncated. The server-side search has been improved as well. The range and the folder in which the search was initiated are taken into [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>we just released Z-Push 2.0 RC (build 1333).</p>
+<p><strong>Notes</strong><br />
+This version fixes issues with Playbook&#8217;s and Androids&#8217; (&gt;=4.0.3) calendar. It also fixes the issue that a forwarded message has been truncated.<br />
+The server-side search has been improved as well. The range and the folder in which the search was initiated are taken into account.<br />
+Android 4 compatibility has been improved a lot with this release.<br />
+Also a lot of other smaller fixes and improvements have been made.</p>
+<p><strong>Additional notes</strong><br />
+The default state directory is /var/lib/z-push, the default log directory /var/log/z-push.<br />
+Please create these directories and make them writable for Apache<br />
+or change the configuration parameters to fit your needs.</p>
+<p>Be aware that if you are using LOGLEVEL_DEBUG and LOGLEVEL_WBXML Z-Push will be quite talkative,<br />
+so it is advisable to use log-rotate on the log file.</p>
+<p>The version is available at: <a href="http://z-push.sourceforge.net/download" target="_blank">http://z-push.sourceforge.net/download</a></p>
+<p>Your feedback is highly appreciated and requested.</p>
+<p>Kind regards,<br />
+Manfred<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-0rc-released/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Changes in Z-Push&#8217;s SVN</title>
+		<link>https://z-push.org/changes-in-z-pushs-svn/</link>
+					<comments>https://z-push.org/changes-in-z-pushs-svn/#respond</comments>
+		
+		<dc:creator><![CDATA[Sebastian]]></dc:creator>
+		<pubDate>Mon, 04 Jun 2012 12:00:59 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://62.245.227.250/?p=97</guid>
+
+					<description><![CDATA[Hi all, we have made some changes in the svn directory structure. The trunk moved into branches/z-push-1 and branches/z-push-2 intotrunk/src. If you have a checkout of a trunk or z-push-2 branch you will have to switch your project into new location. Read here how to switch it. Sebastian]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>we have made some changes in the svn directory structure. The <em>trunk</em> moved into <em>branches/z-push-1</em> and <em>branches/z-push-2</em> into<em>trunk/src</em>. If you have a checkout of a trunk or z-push-2 branch you will have to switch your project into new location. Read <a href="http://z-push.sourceforge.net/phpbb/viewtopic.php?f=5&amp;t=2040" target="_blank">here</a> how to switch it.</p>
+<p>Sebastian</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/changes-in-z-pushs-svn/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

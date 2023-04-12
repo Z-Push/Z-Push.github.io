@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2015/09/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Mon, 19 Oct 2015 16:24:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 2.2.4 final released</title>
+		<link>https://z-push.org/z-push-2-2-4-final-released/</link>
+					<comments>https://z-push.org/z-push-2-2-4-final-released/#respond</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Wed, 30 Sep 2015 17:44:28 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=345</guid>
+
+					<description><![CDATA[Hi all, 2015-10-19: We had to take this version offline as it introduced a bug in all backends (ZP-723). We will release a Z-Push 2.2.5 which will include a fix for it and changes from 2.2.4 today. today we have released the Z-Push 2.2.4 final version (tag 2.2.4, commit fecec66ca6a266e526efe7304e2823e822d31882). We had to remove ZP-672 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<h3><span style="color: #ff0000;"><strong>2015-10-19: We had to take this version offline as it introduced a bug in all backends (ZP-723). We will release a Z-Push 2.2.5 which will include a fix for it and changes from 2.2.4 today.</strong></span></h3>
+<p>today we have released the Z-Push 2.2.4 final version (tag 2.2.4, commit fecec66ca6a266e526efe7304e2823e822d31882). We had to remove ZP-672 from the final release because it has caused problems with GAL search.</p>
+<p><strong>Important notes</strong><br />
+This version contains quite some bug fixes and improvements, most of them being the contributions from the community. Thanks a lot to Francisco, Ralf and Vincent.<br />
+Outlook with ActiveSync was working slow or not at all in certain cases due to Global WindowsSize not being honoured.<br />
+Adjustments to make Z-Push work with PHP-Composer.<br />
+Functionality to auto load backend was added.<br />
+There were improvements for the DiffBackend performance.<br />
+Z-Push logs and legal message now display the git commit information.</p>
+<p>The full changelog is available <a href="http://download.z-push.org/final/2.2/z-push-2.2.4.txt">here</a>.</p>
+<p>The version is available at: <a href="http://download.z-push.org/final/2.2/">http://download.z-push.org/final/2.2/</a>.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,<br />
+Manfred<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-2-4-final-released/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Z-Push 2.2.3 final released</title>
+		<link>https://z-push.org/z-push-2-2-3-final-released/</link>
+					<comments>https://z-push.org/z-push-2-2-3-final-released/#respond</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Wed, 02 Sep 2015 23:36:53 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=339</guid>
+
+					<description><![CDATA[Hi all, today we have released the Z-Push 2.2.3 final version (tag 2.2.3, commit 4cd5b765dfaffda34017354fbcb57e13899ef2c5). This is our first release using git and the new Atlasian stack at https://jira.z-hub.io. Thanks for everybody who was involved in making it happen. Important notes This version contains several bug fixes. S/MIME signed and encrypted emails are now displayed [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>today we have released the Z-Push 2.2.3 final version (tag 2.2.3, commit 4cd5b765dfaffda34017354fbcb57e13899ef2c5). This is our first release using git and the new Atlasian stack at <a href="https://jira.z-hub.io">https://jira.z-hub.io</a>. Thanks for everybody who was involved in making it happen.</p>
+<p><strong>Important notes</strong><br />
+This version contains several bug fixes.<br />
+S/MIME signed and encrypted emails are now displayed correctly in Outlook 2013 connected via Z-Push/ActiveSync for the ZCP backend.<br />
+Message move status won&#8217;t return error when trying to move a message into trash that cannot be found on the server anymore.<br />
+Warnings when using autodiscover were fixed.<br />
+Some enhancements for z-push-admin.</p>
+<p><strong>Changes since Z-Push 2.2.2</strong><br />
+General<br />
+[ZP-550] &#8211; Warnings in AutoDiscover<br />
+[ZP-574] &#8211; z-push-admin -a fixstates gives errors in z-push.log<br />
+[ZP-577] &#8211; Add legacy function for http_response_code<br />
+[ZP-621] &#8211; LoopDetection code causing full resync after multiple folder changes<br />
+[ZP-625] &#8211; Warnings in index.php</p>
+<p>Zarafa<br />
+[ZP-593] &#8211; S/Mime signed emails are not displayed correctly in OL13<br />
+[ZP-609] &#8211; Warnings when searching<br />
+[ZP-624] &#8211; Message move should return status OK even if there were errors<br />
+[ZP-634] &#8211; Fix ZP-505 causes all messages to be turned into html as well</p>
+<p>The version is available at: <a href="http://download.z-push.org/final/2.2/">http://download.z-push.org/final/2.2/</a>.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,<br />
+Manfred<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-2-3-final-released/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

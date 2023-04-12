@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from z-push.org/z-push-2-0-6-final-released/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Mar 2023 04:13:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="../xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<script>var et_site_url='../index.html';var et_post_id='117';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><title>Z-Push 2.0.6 final released | Z-Push</title>
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Z-Push &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Z-Push &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Z-Push &raquo; Z-Push 2.0.6 final released Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/z-push.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.10"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="Divi v.4.7.7" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../wp-includes/css/dist/block-library/style.mindac3.css?ver=5.6.10' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext&amp;display=swap' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css'  href='../wp-content/themes/Divi/style447e.css?ver=4.7.7' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='../wp-content/tablepress-combined.min840f.css?ver=10' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='../wp-includes/css/dashicons.mindac3.css?ver=5.6.10' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/posts/117.html" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.10" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../index8320.html?p=117' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embedf655.html?url=https%3A%2F%2Fz-push.org%2Fz-push-2-0-6-final-released%2F" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="preload" href="../wp-content/themes/Divi/core/admin/fonts/modules.ttf" as="font" crossorigin="anonymous"><link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="../wp-content/et-cache/global/et-divi-customizer-global-16795332909098.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /></head>
+<body class="post-template-default single single-post postid-117 single-format-standard et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="../index.html">
+						<img src="../zpush.jpg" alt="Z-Push" id="logo" data-height-percentage="54" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+													<ul id="top-menu" class="nav">
+																	<li ><a href="../index.html">Home</a></li>
+								
+								<li class="page_item page-item-30"><a href="../bugs/index.html">Bugs</a></li>
+<li class="page_item page-item-175"><a href="../compatibility/index.html">Compatibility</a></li>
+<li class="page_item page-item-24"><a href="../developers/index.html">Developers</a></li>
+<li class="page_item page-item-28"><a href="../download/index.html">Download</a></li>
+<li class="page_item page-item-26"><a href="../faq/index.html">FAQ</a></li>
+									<li class="cat-item cat-item-1"><a href="../category/news/index.html">News</a>
+</li>
+							</ul>
+												</nav>
+					
+					
+					
+										<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://z-push.org/">
+					<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-117" class="et_pb_post post-117 post type-post status-publish format-standard hentry category-news">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Z-Push 2.0.6 final released</h1>
+
+						<p class="post-meta"> by <span class="author vcard"><a href="../author/mkutas/index.html" title="Posts by Manfred" rel="author">Manfred</a></span> | <span class="published">Dec 6, 2012</span> | <a href="../category/news/index.html" rel="category tag">News</a> | <span class="comments-number"><a href="index.html#respond">0 comments</a></span></p>
+												</div> <!-- .et_post_meta_wrapper -->
+				
+					<div class="entry-content">
+					<p>Hi all,</p>
+<p>today we have released the final version of Z-Push 2.0.6 (build 1616). There were two fixes after the 2.0.6RC was released, you should update if you are using the RC version. The 2.0.6RC breaks the synchronisation with devices which only support up to ActiveSync version 12.0 (Windows Mobile 6.0). The newer devices (Windows Mobile 6.1 and 6.5, Windows Phone, iOS devices, android devices, recent Symbian phones) aren&#8217;t affected.</p>
+<p><strong>Notes</strong><br />
+It fixes duplicate items issues in devices which are Heartbeat-able (Windows Phone, some Android devices). Issue regarding meeting request on Nokia Meego has also been fixed. Windows Mobile 6.1 and 6.5 now are able to synchronize using Z-Push. We have also updated the documentation regarding required packages for various operating systems. Existing with CTRL+C from z-push-top doesn&#8217;t break the terminal any more. We have removed Kolab backend because it is not being developed any more.</p>
+<p>Using Zarafa backend it&#8217;s now possible to move folders on iOS devices. Also it&#8217;s not possible any more to delete junk folder or to rename draft or outbox on iOS devices. Rare cases issue that special chars were broken on Android devices has been fixed. &#8220;On event&#8221; reminders set on the phone are now correctly synced to Outlook/Webapp/Webaccess.</p>
+<p>Thanks to Franscisco aka fmbiete the IMAP backend users now have HTML email support on their devices. He also implemented stars (todo flags) and added some other fixes to the IMAP backend. Big thanks, Fransciso, and keep up the good work.</p>
+<p>We would also like to thank Vincent aka liverpoolfan for his feedback and suggestions and Robert aka rsc for his suggestions and bug reports. And also thanks for everyone for Z-Push feedback.</p>
+<p>Complete change log is available at: <a href="http://zarafa-deutschland.de/z-push-download/final/2.0/z-push-2.0.6-1616.txt">http://zarafa-deutschland.de/z-push-download/final/2.0/z-push-2.0.6-1616.txt</a></p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,</p>
+<p>Manfred<br />
+Z-Push dev team</p>
+					</div> <!-- .entry-content -->
+					<div class="et_post_meta_wrapper">
+					<!-- You can start editing here. -->
+
+<section id="comment-wrap">
+		   <div id="comment-section" class="nocomments">
+		  			 <!-- If comments are open, but there are no comments. -->
+
+		  	   </div>
+					<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Submit a Comment</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://z-push.org/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Submit Comment" /> <input type='hidden' name='comment_post_ID' value='117' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="ce5e5aeefa" /></p><input type="hidden" id="ak_js" name="ak_js" value="28"/><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea></form>	</div><!-- #respond -->
+	<p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">Learn how your comment data is processed</a>.</p>	</section>					</div> <!-- .et_post_meta_wrapper -->
+				</article> <!-- .et_pb_post -->
+
+						</div> <!-- #left-area -->
+
+				<div id="sidebar">
+		
+		<div id="recent-posts-2" class="et_pb_widget widget_recent_entries">
+		<h4 class="widgettitle">Latest News</h4>
+		<ul>
+											<li>
+					<a href="../z-push-2-6-2-final-released/index.html">Z-Push 2.6.2 final released</a>
+									</li>
+											<li>
+					<a href="../z-push-2-6-1-final-release/index.html">Z-Push 2.6.1 final release</a>
+									</li>
+											<li>
+					<a href="../z-push-2-6-0-final-released/index.html">Z-Push 2.6.0 final released</a>
+									</li>
+											<li>
+					<a href="../z-push-2-5-2-final-released/index.html">Z-Push 2.5.2 final released</a>
+									</li>
+											<li>
+					<a href="../z-push-2-5-1-final-release/index.html">Z-Push 2.5.1 final release</a>
+									</li>
+					</ul>
+
+		</div> <!-- end .et_pb_widget --><div id="archives-2" class="et_pb_widget widget_archive"><h4 class="widgettitle">Archives</h4>
+			<ul>
+					<li><a href='../2021/02/index.html'>February 2021</a></li>
+	<li><a href='../2020/12/index.html'>December 2020</a></li>
+	<li><a href='../2020/10/index.html'>October 2020</a></li>
+	<li><a href='../2020/03/index.html'>March 2020</a></li>
+	<li><a href='../2019/08/index.html'>August 2019</a></li>
+	<li><a href='../2019/05/index.html'>May 2019</a></li>
+	<li><a href='../2019/04/index.html'>April 2019</a></li>
+	<li><a href='../2018/11/index.html'>November 2018</a></li>
+	<li><a href='../2018/07/index.html'>July 2018</a></li>
+	<li><a href='../2018/06/index.html'>June 2018</a></li>
+	<li><a href='../2018/05/index.html'>May 2018</a></li>
+	<li><a href='../2018/04/index.html'>April 2018</a></li>
+	<li><a href='../2018/03/index.html'>March 2018</a></li>
+	<li><a href='../2018/02/index.html'>February 2018</a></li>
+	<li><a href='../2017/12/index.html'>December 2017</a></li>
+	<li><a href='../2017/10/index.html'>October 2017</a></li>
+	<li><a href='../2017/09/index.html'>September 2017</a></li>
+	<li><a href='../2017/08/index.html'>August 2017</a></li>
+	<li><a href='../2017/06/index.html'>June 2017</a></li>
+	<li><a href='../2017/04/index.html'>April 2017</a></li>
+	<li><a href='../2017/03/index.html'>March 2017</a></li>
+	<li><a href='../2016/12/index.html'>December 2016</a></li>
+	<li><a href='../2016/11/index.html'>November 2016</a></li>
+	<li><a href='../2016/10/index.html'>October 2016</a></li>
+	<li><a href='../2016/09/index.html'>September 2016</a></li>
+	<li><a href='../2016/08/index.html'>August 2016</a></li>
+	<li><a href='../2016/07/index.html'>July 2016</a></li>
+	<li><a href='../2016/05/index.html'>May 2016</a></li>
+	<li><a href='../2016/03/index.html'>March 2016</a></li>
+	<li><a href='../2016/02/index.html'>February 2016</a></li>
+	<li><a href='../2016/01/index.html'>January 2016</a></li>
+	<li><a href='../2015/12/index.html'>December 2015</a></li>
+	<li><a href='../2015/11/index.html'>November 2015</a></li>
+	<li><a href='../2015/10/index.html'>October 2015</a></li>
+	<li><a href='../2015/09/index.html'>September 2015</a></li>
+	<li><a href='../2015/07/index.html'>July 2015</a></li>
+	<li><a href='../2015/04/index.html'>April 2015</a></li>
+	<li><a href='../2015/02/index.html'>February 2015</a></li>
+	<li><a href='../2014/06/index.html'>June 2014</a></li>
+	<li><a href='../2014/05/index.html'>May 2014</a></li>
+	<li><a href='../2013/11/index.html'>November 2013</a></li>
+	<li><a href='../2013/09/index.html'>September 2013</a></li>
+	<li><a href='../2013/08/index.html'>August 2013</a></li>
+	<li><a href='../2013/02/index.html'>February 2013</a></li>
+	<li><a href='../2012/12/index.html'>December 2012</a></li>
+	<li><a href='../2012/11/index.html'>November 2012</a></li>
+	<li><a href='../2012/10/index.html'>October 2012</a></li>
+	<li><a href='../2012/09/index.html'>September 2012</a></li>
+	<li><a href='../2012/08/index.html'>August 2012</a></li>
+	<li><a href='../2012/07/index.html'>July 2012</a></li>
+	<li><a href='../2012/06/index.html'>June 2012</a></li>
+	<li><a href='../2012/05/index.html'>May 2012</a></li>
+	<li><a href='../2012/04/index.html'>April 2012</a></li>
+	<li><a href='../2012/03/index.html'>March 2012</a></li>
+	<li><a href='../2012/02/index.html'>February 2012</a></li>
+	<li><a href='../2011/12/index.html'>December 2011</a></li>
+	<li><a href='../2011/09/index.html'>September 2011</a></li>
+	<li><a href='../2011/07/index.html'>July 2011</a></li>
+	<li><a href='../2011/05/index.html'>May 2011</a></li>
+	<li><a href='../2011/04/index.html'>April 2011</a></li>
+	<li><a href='../2011/01/index.html'>January 2011</a></li>
+	<li><a href='../2010/11/index.html'>November 2010</a></li>
+	<li><a href='../2010/07/index.html'>July 2010</a></li>
+	<li><a href='../2010/06/index.html'>June 2010</a></li>
+	<li><a href='../2010/05/index.html'>May 2010</a></li>
+	<li><a href='../2009/07/index.html'>July 2009</a></li>
+	<li><a href='../2009/01/index.html'>January 2009</a></li>
+	<li><a href='../2008/12/index.html'>December 2008</a></li>
+	<li><a href='../2008/09/index.html'>September 2008</a></li>
+	<li><a href='../2008/07/index.html'>July 2008</a></li>
+	<li><a href='../2008/04/index.html'>April 2008</a></li>
+	<li><a href='../2008/03/index.html'>March 2008</a></li>
+	<li><a href='../2008/02/index.html'>February 2008</a></li>
+	<li><a href='../2007/11/index.html'>November 2007</a></li>
+	<li><a href='../2007/10/index.html'>October 2007</a></li>
+			</ul>
+
+			</div> <!-- end .et_pb_widget -->	</div> <!-- end #sidebar -->
+		</div> <!-- #content-area -->
+	</div> <!-- .container -->
+	</div> <!-- #main-content -->
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-rss">
+		<a href="indexecca.html?cat=1&amp;feed=rss2" class="icon">
+			<span>RSS</span>
+		</a>
+	</li>
+
+</ul><p id="footer-info">Designed by <a href="http://www.elegantthemes.com/" title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a href="http://www.wordpress.org/">WordPress</a></p>					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+
+	</div> <!-- #page-container -->
+
+	<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://z-push.org/stats/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="../stats/piwik0412.gif?idsite=1" style="border:0;" alt="" /></p></noscript><script type='text/javascript' src='../wp-includes/js/comment-reply.mindac3.js?ver=5.6.10' id='comment-reply-js'></script>
+<script type='text/javascript' id='divi-custom-script-js-extra'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/z-push.org\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/z-push.org\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/z-push.org\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"cc16a88508","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"951c2678cd","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"117","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""}; var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/Divi/js/custom.unified447e.js?ver=4.7.7' id='divi-custom-script-js'></script>
+<script type='text/javascript' src='../wp-content/themes/Divi/core/admin/js/common447e.js?ver=4.7.7' id='et-core-common-js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.mindac3.js?ver=5.6.10' id='wp-embed-js'></script>
+<script async="async" type='text/javascript' src='../wp-content/plugins/akismet/_inc/form3cbe.html?ver=4.1.8' id='akismet-form-js'></script>
+</body>
+
+<!-- Mirrored from z-push.org/z-push-2-0-6-final-released/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Mar 2023 04:13:32 GMT -->
+</html>

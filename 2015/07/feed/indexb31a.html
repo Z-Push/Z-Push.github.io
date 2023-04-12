@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2015/07/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Wed, 29 Jul 2015 17:49:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 2.2.2 released</title>
+		<link>https://z-push.org/z-push-2-2-2-released/</link>
+					<comments>https://z-push.org/z-push-2-2-2-released/#respond</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Wed, 29 Jul 2015 17:49:42 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=333</guid>
+
+					<description><![CDATA[Hi all, today we have released the Z-Push 2.2.2 final version (build 1981). Important notes This version contains several bug fixes and enhancements. We had to disable checking of notifications validity in Ping. This will generate additional requests, because ping will reply on all received notification regardless the sync interval. It is now possible to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>today we have released the Z-Push 2.2.2 final version (build 1981).</p>
+<p><strong>Important notes</strong><br />
+This version contains several bug fixes and enhancements.<br />
+We had to disable checking of notifications validity in Ping. This will generate additional requests, because ping will reply on all received notification regardless the sync interval.<br />
+It is now possible to use Outlook 2013 via ActiveSync with Z-Push. Please be aware that this functionality is not yet ready for production use, but is meant as a preview. We are aware of several missing features in Outlook via ActiveSync, like no availability of free-busy data, missing reply &amp; forward flags of emails and the missing Global Address Book (GAB). We have several ideas and plans how to fix these issues.<br />
+Android devices with Cyanogenmod 11 should be able to sync now.<br />
+The issue with faulty appointment status on iOS 8 was fixed.<br />
+Endless sync on Blackberry and some few LG devices was fixed.<br />
+Increased the default SYNC_CONTACTS_MAXPICTURESIZE value in config.php.<br />
+The issue with the duplicate &#8220;RSS Feeds&#8221; folder in Outlook 2013 has been fixed.<br />
+Setting folder display name to &#8220;unknown&#8221; if it is not available in the store (rare issue).<br />
+listfolders.php now accepts ssl certificates for authentication.<br />
+Some enhancements for z-push-admin.</p>
+<p><strong>Changes since Z-Push 2.2.1</strong><br />
+General<br />
+[ZP-451] &#8211; Mobile sending a folder type receives wrong ping information.<br />
+[ZP-544] &#8211; Not compatible with Cyanogenmod 11.<br />
+[ZP-558] &#8211; Enhance error message for folder resync.<br />
+[ZP-563] &#8211; z-push-admin ignores -u when -d is given.<br />
+[ZP-572] &#8211; Increase default SYNC_CONTACTS_MAXPICTURESIZE.<br />
+[ZP-604] &#8211; Allow OL connections via ActiveSync.<br />
+[ZP-606] &#8211; Warnings in appointment sync.<br />
+[ZP-608] &#8211; Write binary logs.<br />
+[ZP-611] &#8211; Set folder display name to &#8220;unknown&#8221; if the name is not available.<br />
+[ZP-623] &#8211; Resync folder if ICS exports &lt;Remove&gt; requests for all items of a folder.<br />
+[ZP-631] &#8211; Disable checking of notifications validity in Ping.</p>
+<p>Zarafa<br />
+[ZP-554] &#8211; extend listfolders.php for ssl certificates.<br />
+[ZP-586] &#8211; Appointments accepted in Outlook are not accepted on iOS 8.<br />
+[ZP-588] &#8211; Log sourcekey, parentsourcekey and entryid before retrieving message from the MAPIProvider.<br />
+[ZP-589] &#8211; Add application version/type and client version/type to mapi_logon call.<br />
+[ZP-607] &#8211; &#8220;RSS Feeds&#8221; seen twice in OL 2013 via AS.</p>
+<p>The version is available at: <a href="http://download.z-push.org/final/2.2/">http://download.z-push.org/final/2.2/</a>.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,<br />
+Manfred<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-2-2-released/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

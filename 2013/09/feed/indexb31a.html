@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2013/09/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Sun, 02 Feb 2014 12:51:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 2.1.0 released</title>
+		<link>https://z-push.org/z-push-2-1-0-released/</link>
+					<comments>https://z-push.org/z-push-2-1-0-released/#respond</comments>
+		
+		<dc:creator><![CDATA[Manfred]]></dc:creator>
+		<pubDate>Wed, 18 Sep 2013 12:00:28 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://62.245.227.250/?p=124</guid>
+
+					<description><![CDATA[Hi all, Today we have released the Z-Push 2.1.0 final version (build 1750). It contains several new features like S/Mime support and administration features. Windows 8 ActiveSync is now also supported. Compared to 2.1.0 Milestone 2 this version has various general fixes, regarding S/Mime, Blackberry 10 and calendaring. For better performance of Windows 8 mail [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>Today we have released the Z-Push 2.1.0 final version (build 1750).<br />
+It contains several new features like S/Mime support and administration features. Windows 8 ActiveSync is now also supported.<br />
+Compared to 2.1.0 Milestone 2 this version has various general fixes, regarding S/Mime, Blackberry 10 and calendaring.</p>
+<p>For better performance of Windows 8 mail clients changes in the state files are necessary.<br />
+When you upgrade from Z-Push 2.0.x or 2.1.0 M1 you need to migrate your Z-Push states &#8211; see instructions below.</p>
+<p>Please report us your experience, about this release in general and please also about the upgrade process.</p>
+<p><strong>Important &#8211; NOTE</strong><br />
+This version of Z-Push only works with ZCP 7.0.6 or later.</p>
+<p><strong>Important &#8211; UPGRADE from Z-Push 2.0.x</strong><br />
+The states of Z-Push 2.0.x and 2.1.0 M1 are not compatible, but a state migration script is available in the tools folder.</p>
+<p>To upgrade, please follow these steps:<br />
+1. Upgrade your z-push files to the new version<br />
+2. Restart apache  (important or your upgrade might fail!)<br />
+3. Mobiles which connect will receive a temporary synchronization error (only visible if you explicitly click &#8220;refresh&#8221; on the mobiles)<br />
+4. Run the upgrade script located in the tools folder. The files distributed by us contain a correct configuration of this script to access the config file and locate the state files. If your file locations are different, please check the path settings in the top of the migration script.<br />
+5. After running the migration script, mobiles will continue synchronizing without any re-synchronization</p>
+<p>You can run the script multiple times, but normally there is no need to do so.</p>
+<p><strong>Changes compared to Z-Push 2.0.x:</strong></p>
+<p>New features:<br />
+[ZP-36] &#8211; Feature to resynchronize a single folder or folder type of a user<br />
+[ZP-43] &#8211; Implement ValidateCert command<br />
+[ZP-44] &#8211; Implement ResolveRecipients command<br />
+[ZP-45] &#8211; Implement S/Mime<br />
+[ZP-237] &#8211; Show if folders are fully synchronized in z-push-admin device details<br />
+[ZP-272] &#8211; Command MoveItems should check if messages are in sync interval<br />
+[ZP-328] &#8211; Proxied Z-Push could show remote IP instead of proxy IP<br />
+[ZP-379] &#8211; Reply/Forward flags are not synced from the server to the mobile</p>
+<p>Full change log is available <a href="http://zarafa-deutschland.de/z-push-download/final/2.1/z-push-2.1.0-1750.txt">here</a>.</p>
+<p>The version is available at: <a href="http://zarafa-deutschland.de/z-push-download/final/2.1/">http://zarafa-deutschland.de/z-push-download/final/2.1/</a>.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,<br />
+Manfred<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-1-0-released/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

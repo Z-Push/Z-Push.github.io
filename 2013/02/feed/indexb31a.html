@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2013/02/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Sun, 02 Feb 2014 12:51:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 2.0.7 final released</title>
+		<link>https://z-push.org/z-push-2-0-7-final-release/</link>
+					<comments>https://z-push.org/z-push-2-0-7-final-release/#respond</comments>
+		
+		<dc:creator><![CDATA[Manfred]]></dc:creator>
+		<pubDate>Mon, 18 Feb 2013 12:00:17 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://62.245.227.250/?p=120</guid>
+
+					<description><![CDATA[Hi all, today we have released the final version Z-Push 2.0.7 (build 1690). Notes In this version we have implemented new features like the support for S/Mime signing and en/decryption of messages on the mobile. Also Reply/Forward flags sync from the server to the mobile was implemented. We have also merged several fixes from 2.1 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hi all,</p>
+<p>today we have released the final version Z-Push 2.0.7 (build 1690).</p>
+<p><strong>Notes</strong></p>
+<p>In this version we have implemented new features like the support for S/Mime signing and en/decryption of messages on the mobile. Also Reply/Forward flags sync from the server to the mobile was implemented.</p>
+<p>We have also merged several fixes from 2.1 into this release. Heartbeat connections should work as expected now and not cause sync on every folder.</p>
+<p><strong>S/MIME</strong></p>
+<p>The following refers to Zarafa backend only.In order to use S/MIME for email signing and/or encryption on your mobile device there are some requirements.First of all you will need an email certificate. Acquiring it is beyond of the scope of this document. Configuring certifications in AD/LDAP is also not covered here but there are various sites covering it. Later the will be a more extensive configuration manual available.</p>
+<p>The private key must be imported to the mobile device. It can be achieved either sending yourself an email with the key or uploading it onto the storage card. The key must be in PKCS-format (.p12). It can be exported e.g. using windows mmc console. It is also possible to retrieve the key using Firefox certificates&#8217; backup (if you have installed the certificate using Firefox). Once you&#8217;ve imported it, in your active sync account settings there&#8217;s security options where you can select the key.</p>
+<p>It might be possible that PHP functions require CA information in order to validate certs. Therefore the CAINFO parameter in the line 101 of config.php must be configured propertly.</p>
+<p>The public keys for encryption are retrieved either from the global address book or the contacts.</p>
+<p>In Active Directory the public key for contacts from GAB is saved in PR_EMS_AB_TAGGED_X509_CERT (0x8C6A1102) property and if you save a key in a contact it&#8217;s PR_USER_X509_CERTIFICATE (0x3A701102).</p>
+<p>In LDAP public key for contacts from GAB is saved in userCertificate property. It should be mapped to 0x3A220102 in ldap.propmap.cfg (0x3A220102     =       userCertificate). Make sure it looks like this in LDAP: userCertificate;binary:: MIIFGjCCBAKgAwIBAgIQbRnqpxlPa&#8230;</p>
+<p>Currently only Android 4.X and higher and iOS 5 and higher devices are known to support encryption/signing of emails.</p>
+<p><strong>Changes</strong> <strong>since 2.0.6</strong></p>
+<p>New features:</p>
+<p>[ZP-396] &#8211; Merge into 2.0.x: Reply/Forward flags are not synced from the server to the mobile</p>
+<p>[ZP-401] &#8211; Merge into 2.0.x: Implement S/MIME</p>
+<p>Full change log is available <a href="http://zarafa-deutschland.de/z-push-download/final/2.0/z-push-2.0.7-1690.txt">here</a>.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,</p>
+<p>Manfred<br />
+Z-Push dev team</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-0-7-final-release/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

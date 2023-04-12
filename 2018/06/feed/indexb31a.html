@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2018/06/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Thu, 14 Jun 2018 14:00:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 2.4.3 final release</title>
+		<link>https://z-push.org/z-push-2-4-3-final-release/</link>
+					<comments>https://z-push.org/z-push-2-4-3-final-release/#respond</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Thu, 14 Jun 2018 14:00:10 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=609</guid>
+
+					<description><![CDATA[Hello, we have just released Z-Push 2.4.3 final (tag 2.4.3 commit db9535be7940d0d0c83e1e08de77bd40997398f3). This is a maintenance release with some bugfixes and improvements. This is the first Z-Push release which supports PHP 7.2 (default PHP version in Ubuntu 18.04). If you are running Ubuntu 18.04 or plan to upgrading to this version, you should upgrade to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hello,</p>
+<p>we have just released <strong>Z-Push 2.4.3 final</strong> (tag <strong>2.4.3</strong> commit <strong>db9535be7940d0d0c83e1e08de77bd40997398f3</strong>).</p>
+<p>This is a maintenance release with some bugfixes and improvements.</p>
+<p>This is the first Z-Push release which supports PHP 7.2 (default PHP version in Ubuntu 18.04). If you are running Ubuntu 18.04 or plan to upgrading to this version, you should upgrade to Z-Push 2.4.3.</p>
+<p>Several smaller issues which were found by coverity (<a href="https://scan.coverity.com/projects/z-push" rel="noopener" target="_blank">https://scan.coverity.com/projects/z-push</a>). Z-Push has now 0.00 defect density!</p>
+<p>We added a new action &#8220;listshares&#8221; to z-push-admin. It will display all open shares on the system per store. Run<br />
+<code>z-push-admin -a listshares</code><br />
+to display open shares for all stores. Run<br />
+<code>z-push-admin -a listshares -o USER</code><br />
+to display who opened the shares of this user. Run<br />
+<code>z-push-admin -a listshares -f FOLDERID</code><br />
+to display who opened this specific folder.</p>
+<p>Z-Push has a new contributor, Raoul, who fixed a bug in the IMAP backend. Thanks!</p>
+<p>Bart has already made various contributions and in this version he added another improvement to the IMAP backend. </p>
+<p>Also thanks to Matt and Markus for reporting an issue with logrotation on RHEL-based systems and a suggestion how to fix it.</p>
+<p>Install Z-Push 2.4.3 from the final repositories (recommended) <a href="https://wiki.z-hub.io/display/ZP/Installation" rel="noopener" target="_blank">Z-Push Wiki</a>.</p>
+<p>The complete changelog is available <a href="https://forum.kopano.io/topic/1489/z-push-2-4-3-final-released" rel="noopener" target="_blank">here</a>.</p>
+<p>Code changes since Z-Push 2.4.2: <a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.2&#038;sourceBranch=refs%2Ftags%2F2.4.3" rel="noopener" target="_blank">https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.2&#038;sourceBranch=refs%2Ftags%2F2.4.3</a></p>
+<p>Please share your experiences (positive and negative) and give feedback!</p>
+<p>Greetings,<br />
+Manfred</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-4-3-final-release/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

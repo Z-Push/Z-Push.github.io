@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News | Z-Push</title>
+	<atom:link href="https://z-push.org/2019/05/feed/?cat=1" rel="self" type="application/rss+xml" />
+	<link>https://z-push.org</link>
+	<description>Open source push technology</description>
+	<lastBuildDate>Wed, 08 May 2019 19:32:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+	<item>
+		<title>Z-Push 2.5.0 final release</title>
+		<link>https://z-push.org/z-push-2-5-0-final-release/</link>
+					<comments>https://z-push.org/z-push-2-5-0-final-release/#respond</comments>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Wed, 08 May 2019 19:32:38 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://z-push.org/?p=631</guid>
+
+					<description><![CDATA[Hello, we have just released Z-Push&#160;2.5.0 final&#160;(tag&#160;2.5.0&#160;commit&#160;2c7d40e0322ac3a0b6da9832730ae3986a30f112). This release includes several new features and improvements as well as bug fixes. One of the most important improvements for Outlook over ActiveSync and KOE users is the better handling of sync windows when loop detection starts. It will process more items in one requests instead of only [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Hello,</p>
+
+
+
+<p>we have just released Z-Push&nbsp;<strong>2.5.0 final</strong>&nbsp;(tag&nbsp;<code>2.5.0</code>&nbsp;commit&nbsp;<code>2c7d40e0322ac3a0b6da9832730ae3986a30f112</code>).</p>
+
+
+
+<p>This release includes several new features and improvements as well as bug fixes.</p>
+
+
+
+<p>One of the most important improvements for Outlook over ActiveSync and KOE users is the better handling of sync windows when loop detection starts. It will process more items in one requests instead of only one.</p>
+
+
+
+<p>Michele added new features in fixing states. It is now possible to fix states for a single user using z-push-admin. It’s also possible to configure more verbose output for fix states. See&nbsp;<a href="https://jira.z-hub.io/browse/ZP-1470" target="_blank" rel="noreferrer noopener">https://jira.z-hub.io/browse/ZP-1470</a>&nbsp;for more information.</p>
+
+
+
+<p>Michele also contributed an improvement for reading state information on high traffic environments (e.g. NFS storage). Make sure to update the main Z-Push config (z-push.conf.php) if you were using FILE_STATE_WRITE_ATTEMPTS or FILE_STATE_WRITE_SLEEP as they were deprecated.</p>
+
+
+
+<p>GAB sync script now has an option to define which objects in GAB (users, groups, rooms, equipments) should be synchronised. Make sure to update and configure the config file (gab-sync.conf.php) according to your needs.<br>GAB sync for large GABs (several thousand entries) is now significantly faster. We also fixed the issue that the deleted users were still available in GAB after gab-sync.</p>
+
+
+
+<p>In the multi memcached server environment a single device’s data will be saved on one of the memcached servers.</p>
+
+
+
+<p>The issue that categories were lost when marking an email read/unread on a shared account has been fixed.</p>
+
+
+
+<p>Bart contributed a timezone handling improvement for the caldav backend. Thanks a lot!</p>
+
+
+
+<p>Marc contributed a date filter fix in search for IMAP backend. Thanks a lot!</p>
+
+
+
+<p>Several other fixes and improvements for Z-Push core as well as the backends.</p>
+
+
+
+<p>Install Z-Push 2.5.0 final from the final repositories (recommended)&nbsp;<a href="https://wiki.z-hub.io/display/ZP/Installation" target="_blank" rel="noreferrer noopener">Z-Push Wiki</a>.</p>
+
+
+
+<p>Thanks a lot to Z-Push contributors Bart, Dirk, Marc, Matteo, maxxer, Michele! Sorry if I forgot anybody, but nevertheless your contributions are highly appreciated. Also thanks to everybody providing us feedback.</p>
+
+
+
+<p>The complete list of changes is available <a href="https://forum.kopano.io/topic/2408/z-push-2-5-0-final-released">here</a>.</p>
+
+
+
+<p>Code changes since Z-Push 2.4.5:&nbsp;<a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.5&amp;sourceBranch=refs%2Ftags%2F2.5.0" target="_blank" rel="noreferrer noopener">https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.5&amp;sourceBranch=refs%2Ftags%2F2.5.0</a></p>
+
+
+
+<p>Please share your experiences (positive and negative) and give feedback!</p>
+
+
+
+<p>Greetings,<br>Manfred</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://z-push.org/z-push-2-5-0-final-release/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

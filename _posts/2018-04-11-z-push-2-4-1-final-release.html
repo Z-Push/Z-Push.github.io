@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Z-Push 2.4.1 final release"
+date: 2018-04-11 09:58:00 +0000
+author: zpushadmin
+categories: [news]
+permalink: /z-push-2-4-1-final-release/
+wp_id: 598
+---
+<p>Hello,</p>
+<p>we have just released <strong>Z-Push 2.4.1 final</strong> (tag 2.4.1 commit db5a7026c70179d169a494afd4ae864c1ff89ce7).</p>
+<p>This is a maintenance release with some bugfixes.</p>
+<p>There was a change in z-push.conf.php regarding default USE_CUSTOM_REMOTE_IP_HEADER value.<br />
+You should upgrade to Z-Push 2.4.1 if you are using fail2ban as Z-Push 2.4.0 might potentially block all requests.</p>
+<p>We have changed folder ownership and logrotation for RHEL-based systems. Please check carefully if everything works as expected, especially if you are using nginx.</p>
+<p>In the cases when memory_limit was set to -1 in php.ini the sync wouldn&#8217;t work. This is now fixed.</p>
+<p>Several smaller bugfixes for caldav, carddav (thanks to Bart for contributions!) and imap backends.</p>
+<p>Install Z-Push 2.4.1 from the final repositories (recommended) <a href="https://wiki.z-hub.io/display/ZP/Installation">https://wiki.z-hub.io/display/ZP/Installation</a>.</p>
+<p>The complete changelog is available <a href="https://forum.kopano.io/topic/1269/z-push-2-4-1-final-released" rel="noopener" target="_blank">here</a>.</p>
+<p>Code changes since Z-Push 2.4.0: <a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.0&amp;sourceBranch=refs%2Ftags%2F2.4.1" rel="noopener" target="_blank">https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.0&#038;sourceBranch=refs%2Ftags%2F2.4.1</a></p>
+<p>Please share your experiences (positive and negative) and give feedback!</p>
+<p>Greetings,<br />
+Manfred</p>

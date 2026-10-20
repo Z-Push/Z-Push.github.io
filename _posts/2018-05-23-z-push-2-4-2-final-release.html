@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Z-Push 2.4.2 final release"
+date: 2018-05-23 10:04:00 +0000
+author: zpushadmin
+categories: [news]
+permalink: /z-push-2-4-2-final-release/
+wp_id: 604
+---
+<p>Hello,</p>
+<p>we have just released <strong>Z-Push 2.4.2 final</strong>** (tag 2.4.2 commit e2a70a79747c8004701f7c915b18587b79f7c59d).</p>
+<p>This is a maintenance release with some bugfixes and improvements.</p>
+<p>We have improved Z-Push packages. For debian-based systems Felix changed the dependency handling.<br />
+RHEL-based systems now should have the correct permissions and ownership for state and log folders. Please check carefully if everything works as expected.</p>
+<p>In certain cases Z-Push triggers folder re-sync if the client requests deletion a lot of items. Sometimes this a desired behaviour and the folder re-sync is not necessary. Michele added new feature to take a threshold into account. Check [Z-Push Wiki](https://wiki.z-hub.io/display/ZP/Hidden+configuration+parameters) for more information.</p>
+<p>For the Kopano backend we fixed saving picture for a contact created on mobile and unsetting properties for tasks.</p>
+<p>Niels added authentication with GSSAPI support for IMAP servers. Therefore changes in the config of the IMAP backend might be necessary.</p>
+<p>Bart fixed several bugs for imap and caldav backends.</p>
+<p>Thank you all for the contributions!</p>
+<p>Install Z-Push 2.4.2 from the final repositories (recommended) <a href="https://wiki.z-hub.io/display/ZP/Installation">https://wiki.z-hub.io/display/ZP/Installation</a>.</p>
+<p>The complete changelog is available <a href="https://forum.kopano.io/topic/1399/z-push-2-4-2-final-released" rel="noopener" target="_blank">here</a>.</p>
+<p>Code changes since Z-Push 2.4.1: <a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.1&amp;sourceBranch=refs%2Ftags%2F2.4.2" rel="noopener" target="_blank">https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.1&#038;sourceBranch=refs%2Ftags%2F2.4.2</a></p>
+<p>Please share your experiences (positive and negative) and give feedback!</p>
+<p>Greetings,<br />
+Manfred</p>

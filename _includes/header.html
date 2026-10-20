@@ -1,46 +1,31 @@
-			<header id="main-header" data-height-onload="66">
-			<div class="container clearfix et_menu_container">
-							<div class="logo_container">
-					<span class="logo_helper"></span>
-					<a href="{{ include.home }}">
-						<img src="{{ include.relpath }}zpush.jpg" alt="Z-Push" id="logo" data-height-percentage="54" />
-					</a>
-				</div>
-							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
-											<nav id="top-menu-nav">
-													<ul id="top-menu" class="nav">
-																	<li ><a href="{{ include.home }}">Home</a></li>
-								
-								<li class="page_item page-item-30"><a href="{{ include.relpath }}bugs/">Bugs</a></li>
-<li class="page_item page-item-175"><a href="{{ include.relpath }}compatibility/">Compatibility</a></li>
-<li class="page_item page-item-24"><a href="{{ include.relpath }}developers/">Developers</a></li>
-<li class="page_item page-item-28"><a href="{{ include.relpath }}download/">Download</a></li>
-<li class="page_item page-item-26"><a href="{{ include.relpath }}faq/">FAQ</a></li>
-									<li class="cat-item cat-item-1"><a href="{{ include.relpath }}category/news/">News</a>
-</li>
-							</ul>
-												</nav>
-					
-					
-					
-										<div id="et_top_search">
-						<span id="et_search_icon"></span>
-					</div>
-					
-					<div id="et_mobile_nav_menu">
-				<div class="mobile_nav closed">
-					<span class="select_page">Select Page</span>
-					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
-				</div>
-			</div>				</div> <!-- #et-top-navigation -->
-			</div> <!-- .container -->
-			<div class="et_search_outer">
-				<div class="container et_search_form_container">
-					<form role="search" method="get" class="et-search-form" action="https://duckduckgo.com/">
-				    	<input type="hidden" name="sites" value="z-push.org">
-						<input type="text" class="et-search-field" placeholder="Search &hellip;" name='q' value="" title="Search for:" />
-					</form>
-					<span class="et_close_search_field"></span>
-				</div>
-			</div>
-		</header> <!-- #main-header -->
+<header class="site-header">
+	<div class="container">
+		<a class="site-logo" href="{{ '/' | relative_url }}">
+			<img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" width="164" height="45">
+		</a>
+		<nav class="site-nav" aria-label="Main">
+			<ul>
+				{%- for item in site.navigation %}
+				<li{% if page.url == item.url %} class="current"{% endif %}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+				{%- endfor %}
+			</ul>
+		</nav>
+		<button class="icon-button search-toggle" type="button" aria-label="Search" aria-expanded="false">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5 22 22"/></svg>
+		</button>
+		<button class="icon-button menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+		</button>
+	</div>
+	<div class="search-bar">
+		<form class="container" role="search" method="get" action="{{ site.search.action | default: 'https://duckduckgo.com/' }}">
+			{%- assign search_site = site.search.site | default: site.url | remove: 'https://' | remove: 'http://' %}
+			<input type="hidden" name="sites" value="{{ search_site }}">
+			<label class="screen-reader-text" for="search-field">Search for:</label>
+			<input id="search-field" type="search" name="q" placeholder="Search &hellip;">
+			<button class="icon-button search-close" type="button" aria-label="Close search">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+			</button>
+		</form>
+	</div>
+</header>

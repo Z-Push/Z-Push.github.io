@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Z-Push 2.1.1 released"
+date: 2013-11-30 02:08:00 +0000
+author: mkutas
+categories: [news]
+permalink: /z-push-2-1-1-released/
+wp_id: 128
+---
+<p>Hi all,</p>
+<p>today we have released the Z-Push 2.1.1 final version (build 1788).</p>
+<p><strong>Important notes</strong></p>
+<p>There were several reports in the last weeks about broken meeting requests where the &#8220;attendee becomes the organizer&#8221;.</p>
+<p>We could limit that to the combination of Z-Push 2.0.8 and iOS 7. If you use these versions you are strongly encouraged to update.</p>
+<p>If your users see broken items in their calendars, there is a python script available to fix these. You can get this script at:</p>
+<p>http://svn.berlios.de/wsvn/z-push/trunk/tools/fix-meetings-2.0.8%2B2.1.0-ios7.py</p>
+<p>We don&#8217;t give any support on this script. Use it at your own risk.</p>
+<p>We also had reports about several issues related with the BlackBerry 10 OS.</p>
+<p>1. if you see &#8220;?&#8221; in a senders name on the mobile you should upgrade your BB firmware to version 10.2.0.415 or higher.</p>
+<p>2. in replied or forwarded emails high characters are broken</p>
+<p>3. in some occasions there was no body displayed on the mobile for emails with attachments</p>
+<p>Issues 2 and 3 are fixed in this release.</p>
+<p>Also the issue that if meeting request was sent from a mobile device, free busy information in the organizer&#8217;s calendar was not available in Outlook or Webapp, has been fixed.</p>
+<p><a href="http://zarafa-deutschland.de/z-push-download/final/2.1/z-push-2.1.1-1788.txt">Changelog</a> since Z-Push 2.1.0.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,</p>
+<p>Manfred<br />
+Z-Push dev team</p>

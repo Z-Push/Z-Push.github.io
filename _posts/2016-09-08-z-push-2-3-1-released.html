@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Z-Push 2.3.1 released"
+date: 2016-09-08 06:59:00 +0000
+author: zpushadmin
+categories: [news]
+permalink: /z-push-2-3-1-released/
+wp_id: 419
+---
+<p>Hi all,</p>
+<p>we have just released Z-Push 2.3.1 final (tag 2.3.1, commit 5b6688deeade1aad2fd9403914a08abdecbe3808).</p>
+<p>This is the first maintenance release of 2.3 containing a few important fixes related to Android calendaring, packages on RHEL 6 &#038; 7, move operations and diff backends in general.<br />
+The SQL state machine should now work with PostgreSQL, thanks to Ralf for finding the issue and fixing it.<br />
+Z-Push now also checks for non-standard characters in the SQL database name. Thanks to Dirk for reporting this.<br />
+The issue that in some cases the iOS devices would loop forever and not sync should now also be fixed. Thanks to Mathias for reporting &#038; testing.<br />
+For more details and other changes, the full change log is available <a href="http://download.z-push.org/final/2.3/z-push-2.3.1.txt">here</a>.</p>
+<p>This version also contains two typo fixes in the commented example configurations of the gab-sync script (package z-push-kopano-gabsync).<br />
+If you have this package installed, you will be alerted at update procedure.<br />
+You can maintain the existing config, but should fix these typos manually (see file diff). </p>
+<p>We would like to thank all our community contributors and everyone who tests Z-Push and provides us feedback.</p>
+<p>If you are interested in a detailed overview of the code changes, see the full <a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.3.0&amp;sourceBranch=refs%2Ftags%2F2.3.1">code diff</a></p>
+<p>Install Z-Push 2.3.1 from the final repositories (recommended): <a href="https://wiki.z-hub.io/display/ZP/Installation">https://wiki.z-hub.io/display/ZP/Installation</a><br />
+The tarball is available, the link can be found at &#8216;Installation&#8217; wiki page.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Greetings,<br />
+Sebastian<br />
+Z-Push dev team</p>

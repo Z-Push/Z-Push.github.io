@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{%- if page.category %}
+	{%- assign archive_posts = site.categories[page.category] %}
+{%- elsif page.author_key %}
+	{%- assign archive_posts = site.posts | where: "author", page.author_key %}
+{%- else %}
+	{%- assign archive_posts = site.posts %}
+{%- endif %}
+{{ content }}
+{% include post-list.html posts=archive_posts %}

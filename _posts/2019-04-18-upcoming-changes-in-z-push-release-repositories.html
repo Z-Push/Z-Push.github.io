@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Upcoming changes in Z-Push release repositories"
+date: 2019-04-18 10:27:00 +0000
+author: zpushadmin
+categories: [news]
+permalink: /upcoming-changes-in-z-push-release-repositories/
+wp_id: 627
+---
+<p>We are planning to do the final release of Z-Push 2.5.0 and therefore the changes in the repositories on the <strong>08.05.2019</strong>. The final repository will then contain Z-Push 2.5.X versions. The old-final will contain Z-Push 2.4.X versions. There will also be changes in the supported distributions, so make sure your repository points to an existing one.</p>
+<p>What does it mean to you?<br />If you have set up to use a final repository and are planing to use Z-Push 2.5.0 once it&#8217;s released, no changes are required. There won&#8217;t be builds for Debian 7 and Univention 4.0 distributions anymore, so if you are using one of those, either upgrade to a more recent distribution or change the repository to point to one of the supported distributions.</p>
+<p>If you have set up to use a final repository and are planing to continue using Z-Push 2.4 after Z-Push 2.5.0 release, you&#8217;ll have to update your repository to old-final. There won&#8217;t be builds for Debian 7, Univention 4.0 as well as Fedora 23, 24 and 25 distributions anymore, so if you are using one of those, either upgrade to a more recent distribution or change the repository to point to one of the supported distributions. For SUSE there will be openSUSE_Leap_42.3 and openSUSE_Tumbleweed repositories. <strong>We will switch the old-stable to Z-Push 2.4 on the 24.04.2019.</strong></p>
+<p>If you have set up to use an old-final repository (currently containing Z-Push 2.3.9) and are planing to continue using it, you&#8217;ll have to disable the repository, so that it&#8217;s not updated anymore. However Z-Push 2.3 has been deprecated on the 30th of June 2018 and we strongly encourage to update to a more recent version.</p>
+<p>Manfred<br />Z-Push developer</p>

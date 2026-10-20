@@ -1,0 +1,9 @@
+# Post authors. The key is what goes in a post's "author:" front matter and
+# the URL slug of the author page (/author/<key>/). Add an author/<key>.html
+# page when adding a new author.
+zpushadmin:
+  name: Admin
+mkutas:
+  name: Manfred
+skummer:
+  name: Sebastian

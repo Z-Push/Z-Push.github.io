@@ -1,0 +1,62 @@
+title: Z-Push
+tagline: Open source push technology
+description: >-
+  Z-Push is an open-source application to synchronize ActiveSync compatible
+  devices such as mobile phones, tablets and Outlook 2013 and above.
+url: "https://z-push.org"
+baseurl: ""
+lang: en-US
+logo: /zpush.jpg
+
+# Posts keep their WordPress-era URLs, e.g. /z-push-2-7-6-released-cve-2025-8264/
+permalink: /:title/
+timezone: UTC
+
+# Number of posts shown in the sidebar "Latest News" widget
+sidebar_posts: 7
+
+# Main menu, in order
+navigation:
+  - title: Home
+    url: /
+  - title: Bugs
+    url: /bugs/
+  - title: Compatibility
+    url: /compatibility/
+  - title: Developers
+    url: /developers/
+  - title: Download
+    url: /download/
+  - title: FAQ
+    url: /faq/
+  - title: News
+    url: /category/news/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: zpushadmin
+      categories: [news]
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

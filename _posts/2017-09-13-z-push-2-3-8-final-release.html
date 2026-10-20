@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Z-Push 2.3.8 final release"
+date: 2017-09-13 08:28:00 +0000
+author: zpushadmin
+categories: [news]
+permalink: /z-push-2-3-8-final-release/
+wp_id: 508
+---
+<p>Hi all,</p>
+<p>we have just released Z-Push 2.3.8 final (tag 2.3.8, commit 0039ee362e576c0cd9090cd5d03650d987c4c081).</p>
+<p>This is a maintenance release with a lot of bugfixes. We added two more fixes since Z-Push 2.3.8 beta2, so please make sure you update Z-Push to this version.</p>
+<p>In some cases there was no data for sent email which led to an empty email in the outbox. Additionally such an email would be created over and over until the user deleted it from the outbox.</p>
+<p>This release also fixes some Send-As related bugs.</p>
+<p>We made some fixes to improve the experience with Windows Phones and WindowsMail client. If you use these devices/clients an update is encouraged. Also make sure that you update config.php as we modified configuration to improve experience with WindowsMail.</p>
+<p>There were quite some contributions for IMAP, CalDav and CardDav backends. We want to thank Z-Push contributors Bart, Chris, Karl and Yano.</p>
+<p>There were also some minor fixes for z-push-admin and z-push-top tools.</p>
+<p>The full changelog is available at <a href="http://download.z-push.org/final/2.3/z-push-2.3.8.txt">http://download.z-push.org/final/2.3/z-push-2.3.8.txt</a> and at <a href="https://forum.kopano.io/topic/615/z-push-2-3-8-final-released">the forum</a>.</p>
+<p>Code changes since Z-Push 2.3.7: <a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.3.7&amp;sourceBranch=refs%2Ftags%2F2.3.8">https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.3.7&#038;sourceBranch=refs%2Ftags%2F2.3.8</a></p>
+<p>Install Z-Push 2.3.8 from the final repositories (recommended): <a href="https://wiki.z-hub.io/display/ZP/Installation">https://wiki.z-hub.io/display/ZP/Installation</a></p>
+<p>The tarball is available here (not recommended): <a href="http://download.z-push.org/final/2.3/z-push-2.3.8.tar.gz">http://download.z-push.org/final/2.3/z-push-2.3.8.tar.gz</a></p>
+<p>Please share your experiences and give feedback!</p>
+<p>Greetings,<br />
+Sebastian<br />
+Z-Push dev team</p>

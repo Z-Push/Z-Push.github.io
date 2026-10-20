@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Z-Push 2.4.0 final release"
+date: 2018-03-08 09:53:00 +0000
+author: zpushadmin
+categories: [news]
+permalink: /z-push-2-4-0-final-release/
+wp_id: 593
+---
+<p>Hello,</p>
+<p>we have just released Z-Push 2.4.0 final (tag 2.4.0 commit 0dfcf19631619195702919b3b4d521fad12f3a88).</p>
+<p>Main feature of this version is the support of ActiveSync protocol version 14.1.<br />
+This new ActiveSync version has features which are implemented as stubs, like RightsManagement, but no backend uses this functionality yet.</p>
+<p>With the Kopano backend the GAB search shows you saved pictures of users on the mobile now for devices which support it (iOS and some Android devices).</p>
+<p>There are now configuration packages for NGINX (also with PHP-FPM support) available.</p>
+<p>We changed the user based logging. Now every user/device combination logs into a separate log file, when a user is in the special log users.</p>
+<p>For statically configured folders (via config.php) now it is possible to configure flags.</p>
+<p>This Z-Push version supports impersonating in KOE 2.0 (to be released soon).</p>
+<p>We also exposed shared folder API to z-push-admin. It means that now it’s possible to easily add or remove shared folders using z-push-admin for every mobile device.</p>
+<p>There’s a new note backend contributed by Karl. Thanks for sharing it!</p>
+<p>Another contribution is wincache IPC provider. Thanks to Michael for contributing it!</p>
+<p>There have been a lot of changes in meeting request and recurring classes for the Kopano backend. Please let us know if you find any issues.</p>
+<p>We want also to thank all our community contributors and for valuable feedback: Andreas, Bart, Chris, Christian, Karl, Michael, Nicolas, Roel, Vincent, Yano! Keep up the good work.</p>
+<p>Install Z-Push 2.4.0 from the final repositories: <a href="https://wiki.z-hub.io/display/ZP/Installation">https://wiki.z-hub.io/display/ZP/Installation</a>.</p>
+<p>The complete changelog is available <a href="https://forum.kopano.io/topic/1165/z-push-2-4-0-final-released" rel="noopener" target="_blank">here</a>.</p>
+<p>Please share your experiences and give feedback!</p>
+<p>Greetings,<br />
+Manfred<br />
+Z-Push dev team</p>

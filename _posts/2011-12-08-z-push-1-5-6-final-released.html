@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Z-Push 1.5.6 final released"
+date: 2011-12-08 01:27:00 +0000
+author: mkutas
+categories: [news]
+permalink: /z-push-1-5-6-final-released/
+wp_id: 87
+---
+<p>Hi,</p>
+<p>today we have released the final version of Z-Push 1.5.6. It is identical to 1.5.6RC-933 (except the version of course).</p>
+<p><strong>Notes</strong></p>
+<p>This is a maintenance release for Z-Push 1.5</p>
+<p>It is recommended for Zarafa users who use Outlook Today view to track today&#8217;s tasks<br />
+because now tasks created on a mobile device appear there as well.</p>
+<p>We have also added a configurable ping interval parameter.<br />
+Setting it to a higher value decreases the server load in certain cases.<br />
+It is the highest time span in seconds before a change is sent to mobile.<br />
+Be aware that setting it to a value too high might result in a time-out.</p>
+<p><strong>Changes since 1.5.5</strong></p>
+<p>General<br />
+&#8211; added: configurable $timeout in HandlePing (Mantis #528)</p>
+<p>Zarafa/ICS<br />
+&#8211; fixed: a task created on a mobile doesn&#8217;t appear in Outlook Today view. The due date must be at 12:00AM straight (Mantis #525)</p>
+<p>IMAP backend<br />
+&#8211; fixed: Sending an email the &#8220;from&#8221; Field in the maillog is &lt;apache&gt; and not real email address (Mantis #497)</p>
+<p>The version is available at: <a href="http://z-push.sourceforge.net/download">http://z-push.sourceforge.net/download</a></p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,<br />
+Manfred<br />
+Z-Push dev team</p>

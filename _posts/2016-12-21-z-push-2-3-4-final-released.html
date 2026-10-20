@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Z-Push 2.3.4 final released"
+date: 2016-12-21 07:59:00 +0000
+author: zpushadmin
+categories: [news]
+permalink: /z-push-2-3-4-final-released/
+wp_id: 479
+---
+<p>Hi all,</p>
+<p>we have just released Z-Push 2.3.4 final version (tag 2.3.4, commit cb60b14dacebef1aefba404a1b05810e3b1d27b2).</p>
+<p>This version is PHP 7 compatible and introduces many other important changes.<br />
+The PHP 7 compatibility is focussed on the main Z-Push code, there can be issues with specific backends or backend functionality.<br />
+We would like to thank all our community contributors and everyone who tests Z-Push and provides us feedback. Please continue doing that.</p>
+<p><strong>Important notes</strong><br />
+The PHP 7 compatibility is focussed on the main Z-Push code, there can be issues with specific backends or backend functionality. For Kopano you require Kopano Core 8.2 which is not yet released as stable.</p>
+<p>Z-Push 2.3.2 already contains fixes related to Meeting Requests on iOS. While this fix works, it&#8217;s not backward compatible to ZCP 7.1.x and 7.2.x before 7.2.3 versions.<br />
+This release fixes it also for these older versions.</p>
+<p>We did introduce two new configuration options and did some changes in the headers. These will require you to update your configuration files.</p>
+<p>This version is required for KOE 1.2 which will released soon. It contains an improved API to open shared folders, also in a hierarchical expected way.<br />
+It&#8217;s now also possible to stop synchronizing hidden GAB objects to the KOE GAB. See here how to do this: <a href="https://wiki.z-hub.io/display/ZP/Kopano+OL+Extension#KopanoOLExtension-HiddenGABentries">https://wiki.z-hub.io/display/ZP/Kopano+OL+Extension#KopanoOLExtension-HiddenGABentries</a></p>
+<p>The full changelog is available <a href="http://download.z-push.org/final/2.3/z-push-2.3.4.txt">here</a>.</p>
+<p>Code changes since Z-Push 2.3.3: <a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.3.3&amp;sourceBranch=refs%2Ftags%2F2.3.4">https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.3.3&#038;sourceBranch=refs%2Ftags%2F2.3.4</a></p>
+<p><strong>Install Z-Push 2.3.4 from the final repositories (recommended)</strong>: <a href="https://wiki.z-hub.io/display/ZP/Installation">https://wiki.z-hub.io/display/ZP/Installation</a></p>
+<p>The tarball is available here (not recommended): http://download.z-push.org/final/2.3/z-push-2.3.4.tar.gz</p>
+<p>Please share your experiences and give feedback!</p>
+<p>Greetings,<br />
+Manfred<br />
+Z-Push dev team</p>

@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Z-Push 2.4.3 final release"
+date: 2018-06-14 10:09:00 +0000
+author: zpushadmin
+categories: [news]
+permalink: /z-push-2-4-3-final-release/
+wp_id: 609
+---
+<p>Hello,</p>
+<p>we have just released <strong>Z-Push 2.4.3 final</strong> (tag <strong>2.4.3</strong> commit <strong>db9535be7940d0d0c83e1e08de77bd40997398f3</strong>).</p>
+<p>This is a maintenance release with some bugfixes and improvements.</p>
+<p>This is the first Z-Push release which supports PHP 7.2 (default PHP version in Ubuntu 18.04). If you are running Ubuntu 18.04 or plan to upgrading to this version, you should upgrade to Z-Push 2.4.3.</p>
+<p>Several smaller issues which were found by coverity (<a href="https://scan.coverity.com/projects/z-push" rel="noopener" target="_blank">https://scan.coverity.com/projects/z-push</a>). Z-Push has now 0.00 defect density!</p>
+<p>We added a new action &#8220;listshares&#8221; to z-push-admin. It will display all open shares on the system per store. Run<br />
+<code>z-push-admin -a listshares</code><br />
+to display open shares for all stores. Run<br />
+<code>z-push-admin -a listshares -o USER</code><br />
+to display who opened the shares of this user. Run<br />
+<code>z-push-admin -a listshares -f FOLDERID</code><br />
+to display who opened this specific folder.</p>
+<p>Z-Push has a new contributor, Raoul, who fixed a bug in the IMAP backend. Thanks!</p>
+<p>Bart has already made various contributions and in this version he added another improvement to the IMAP backend. </p>
+<p>Also thanks to Matt and Markus for reporting an issue with logrotation on RHEL-based systems and a suggestion how to fix it.</p>
+<p>Install Z-Push 2.4.3 from the final repositories (recommended) <a href="https://wiki.z-hub.io/display/ZP/Installation" rel="noopener" target="_blank">Z-Push Wiki</a>.</p>
+<p>The complete changelog is available <a href="https://forum.kopano.io/topic/1489/z-push-2-4-3-final-released" rel="noopener" target="_blank">here</a>.</p>
+<p>Code changes since Z-Push 2.4.2: <a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.2&amp;sourceBranch=refs%2Ftags%2F2.4.3" rel="noopener" target="_blank">https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.4.2&#038;sourceBranch=refs%2Ftags%2F2.4.3</a></p>
+<p>Please share your experiences (positive and negative) and give feedback!</p>
+<p>Greetings,<br />
+Manfred</p>

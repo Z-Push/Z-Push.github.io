@@ -1,0 +1,9 @@
+{%- assign meta_post = include.post | default: page -%}
+{%- assign meta_author = site.data.authors[meta_post.author] -%}
+<p class="entry-meta">
+	<time datetime="{{ meta_post.date | date_to_xmlschema }}">{{ meta_post.date | date: "%b %-d, %Y" }}</time>
+	<span>by <a href="{{ '/author/' | append: meta_post.author | append: '/' | relative_url }}" rel="author">{{ meta_author.name | default: meta_post.author }}</a></span>
+	{%- for category in meta_post.categories %}
+	<a class="tag" href="{{ '/category/' | append: category | append: '/' | relative_url }}" rel="category tag">{{ category | capitalize }}</a>
+	{%- endfor %}
+</p>

@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Z-Push 2.3.7 final release"
+date: 2017-06-21 08:14:00 +0000
+author: zpushadmin
+categories: [news]
+permalink: /z-push-2-3-7-release/
+wp_id: 494
+---
+<p>Hi all,</p>
+<p>we have just released Z-Push 2.3.7 final (tag 2.3.7, commit d788cf9113e21747791bcfd5f9c7261958e20ead).</p>
+<p>This is a maintenance release with several improvements for KOE, but also of general nature.<br />
+Besides one minor ticket (ZP-1243) it is the same as 2.3.7 beta1.</p>
+<p>For KOE 1.4 Z-Push now supports the request of delivery receipts and improved handling of private appointments.<br />
+A new KOE capability flag was added to the main Z-Push configuration file. Please update your config accordingly.</p>
+<p><strong>Synchronization of private appointments</strong><br />
+Private appointments are now not being ignored in shared folders anymore. During the synchronization process their data is stripped, which means that private appointments show up in a shared folder, but have no sensitive data. It’s not possible to edit (save) these appointments via shared access.<br />
+Older KOE versions will allow editing these in Outlook, but the data will not be saved on the server.<br />
+Calendars that are already shared need to be re-synchronized in order to see existing private appointments (close &#038; re-open shared calendar).</p>
+<p><strong>Prioritization of the KOE GAB</strong><br />
+All KOE versions will benefit from the prioritization of the KOE GAB. Until now it could happen that the GAB was only available at the end of the synchronization. This will now happen early in the synchronization process.</p>
+<p><strong>KOE 1.4</strong><br />
+Please be aware that for many of the new features you need KOE 1.4, the release candidate (RC) can be found here: <a href="https://kopano.com/kopano-ol-extension-1-4-rc-now-available/">https://kopano.com/kopano-ol-extension-1-4-rc-now-available/</a></p>
+<p>There have also been some contributions from Chris (IPv6 logging) and Vincent (loosen SyncObject.equals) in this version. Thanks guys!</p>
+<p>This version has also a repository for upcoming Debian 9 available here: <a href="http://repo.z-hub.io/z-push:/final/Debian_9.0/">http://repo.z-hub.io/z-push:/final/Debian_9.0/</a></p>
+<p>The full changelog is available at <a href="http://download.z-push.org/final/2.3/z-push-2.3.7.txt">http://download.z-push.org/final/2.3/z-push-2.3.7.txt</a> and at <a href="https://forum.kopano.io/topic/377/z-push-2-3-7-final-released">the forum</a>.</p>
+<p>Code changes since Z-Push 2.3.6: <a href="https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.3.6&amp;sourceBranch=refs%2Ftags%2F2.3.7">https://stash.z-hub.io/projects/ZP/repos/z-push/compare/diff?targetBranch=refs%2Ftags%2F2.3.6&#038;sourceBranch=refs%2Ftags%2F2.3.7</a></p>
+<p>Install Z-Push 2.3.7 from the final repositories (recommended): <a href="https://wiki.z-hub.io/display/ZP/Installation">https://wiki.z-hub.io/display/ZP/Installation</a></p>
+<p>The tarball is available here (not recommended): <a href="http://download.z-push.org/final/2.3/z-push-2.3.7.tar.gz">http://download.z-push.org/final/2.3/z-push-2.3.7.tar.gz</a></p>
+<p>Please share your experiences and give feedback!</p>
+<p>Greetings,<br />
+Sebastian<br />
+Z-Push dev team</p>

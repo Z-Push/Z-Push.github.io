@@ -1,0 +1,52 @@
+---
+layout: post
+title: "Z-Push 2.0 final released"
+date: 2012-06-21 01:41:00 +0000
+author: mkutas
+categories: [news]
+permalink: /101/
+wp_id: 101
+---
+<p>Hi all,</p>
+<p>after 1,5 years of development we are happy to announce Z-Push 2.0 final.</p>
+<p>Some of the new features:<br />
+&#8211; supports ActiveSync version 14, allowing full HTML email synchronization on all capable devices.<br />
+&#8211; possibility to set/unset your out-of-office settings on your mobile (not all devices support this feature)<br />
+&#8211; &#8220;z-push-top&#8221; tool which shows top-like informations about currently connected devices and their activity<br />
+&#8211; a real real-time notification mechanism for the Zarafa Backend (requires ZCP 7.0.6 or higher)<br />
+&#8211; performs semantic data checks before sending data to a mobile<br />
+&#8211; identifies and fixes or ignores broken items<br />
+&#8211; bi-directional and inter process loop detection<br />
+&#8211; server side search in emails which are not on the phone<br />
+&#8211; meeting organizer sees the status of attendees (accepted/declined/tentatively) on the phone<br />
+&#8211; notes synchronization (only available for some clients e.g. Touchdown on Android)<br />
+&#8211; heartbeat and partial synchronization support<br />
+&#8211; support of recurring tasks (Mantis #125)<br />
+&#8211; global synchronization of the Public Folder (Mantis #198)<br />
+&#8211; improved logging (loglevels, logs on user level possible)<br />
+&#8211; introducing the &#8220;combined&#8221; backend</p>
+<p>There is a lot of new code regarding the ActiveSync 14 support. Many synchronization mechanisms have changed.<br />
+We also switched our Bugtracker. From this version on all tickets will be found at <a href="http://jira.zarafa.com/browse/ZP">http://jira.zarafa.com/browse/ZP</a>.</p>
+<p>We would like to thank everybody who contributed with testing and reporting of issues and ideas<br />
+especially Jan aka deHoeninger, Vincent aka liverpoolfcfan, Erwin aka ebogaard,<br />
+Uwe aka uwe347, Niels aka nprzybilla, Paul aka pfloor and Bert.<br />
+We would also like to thank dw2412 – Andreas Brodowski – for his work on the AS12 branch. A few code blocks of his branch made it into the release.<br />
+Apologies and a big thank you if we have forgotten someone.</p>
+<p>An updated version of the Mobile Device Management Plugin for the Zarafa Webaccess,<br />
+which supports Z-Push 2, was also released.<br />
+It has a new feature which allows resynchronisation of the mobile devices.<br />
+Please check the Community Hub for more information:<br />
+<a href="http://z-push.sf.net/mdmplugin">http://z-push.sf.net/mdmplugin</a></p>
+<p>There is no upgrade path for Z-Push 1.x versions, but as this version implements<br />
+a fully automatic resynchronizing of devices in the case states are missing or faulty,<br />
+you should upgrade _without_ maintaining the existing states.</p>
+<p>The state directory is by default /var/lib/z-push, the log directory /var/log/z-push.<br />
+Please create these directories and make them writeable for apache or<br />
+change the configuration parameters to your needs.</p>
+<p>Be aware that if you are using LOGLEVEL_DEBUG and LOGLEVEL_WBXML Z-Push will be quite talkative, so it is advisable to use log-rotate on the log file.</p>
+<p>The complete changelog is available at: <a href="http://zarafa-deutschland.de/z-push-download/final/2.0/z-push-2.0-1346.txt">http://zarafa-deutschland.de/z-push-download/final/2.0/z-push-2.0-1346.txt</a>.</p>
+<p>The version is available at: <a href="http://z-push.sourceforge.net/download">http://z-push.sourceforge.net/download</a>.</p>
+<p>Your feedback is highly appreciated.</p>
+<p>Kind regards,<br />
+Manfred<br />
+Z-Push dev team</p>

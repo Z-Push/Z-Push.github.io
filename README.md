@@ -51,6 +51,11 @@ The menu pages are `index.html` (Home), `bugs/`, `compatibility/`,
 `developers/`, `download/` and `faq/`. Each is front matter plus the page
 content. The menu itself is the `navigation` list in `_config.yml`.
 
+Pages can also be Markdown. A file such as `faq/index.md` (or `faq.md` with
+`permalink: /faq/`) needs only a `title:` in its front matter; the page
+layout is applied by default. Rename an existing page from `.html` to `.md`
+to convert it, keeping the same folder so its URL does not change.
+
 Listing pages are generated from the posts:
 
 - `/category/news/` - all news posts (`category/news.html`)

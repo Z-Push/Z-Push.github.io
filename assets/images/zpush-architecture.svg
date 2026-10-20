@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="1200" height="860" role="img" aria-labelledby="title desc" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
 	<title id="title">Z-Push architecture</title>
-	<desc id="desc">ActiveSync clients (iOS, Windows, Android, Mail, BlackBerry 10) connect to the frontend: a webserver (apache2, nginx or lighttpd) running PHP (mod_php or php-fpm) with PHP-MAPI. Z-Push sits between the frontend and the backend, where the differential engine serves the Zarafa, MailDir, vCard and IMAP backends or your own application.</desc>
+	<desc id="desc">ActiveSync clients (iOS, Windows, Android, Mail, BlackBerry 10) connect to the frontend: a webserver (apache2, nginx or lighttpd) running PHP (mod_php or php-fpm). Z-Push sits between the frontend and the backend, where the differential engine serves the MailDir, vCard and IMAP backends or your own application.</desc>
 	<defs>
 		<filter id="shadow" x="-5%" y="-10%" width="110%" height="130%">
 			<feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#0f172a" flood-opacity="0.08"/>
@@ -19,11 +19,6 @@
 		<g id="monitor" fill="none" stroke="#1f7a83" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
 			<rect x="-15" y="-12" width="30" height="20" rx="2.5"/>
 			<path d="M-6 14h12M0 8v6"/>
-		</g>
-		<g id="server" fill="none" stroke="#1f7a83" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-			<rect x="-22" y="-24" width="44" height="20" rx="4"/>
-			<rect x="-22" y="4" width="44" height="20" rx="4"/>
-			<path d="M-13 -14h0M-13 14h0"/>
 		</g>
 		<g id="envelope" fill="none" stroke="#1f7a83" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
 			<rect x="-15" y="-10" width="30" height="20" rx="2.5"/>
@@ -46,23 +41,19 @@
 	<text class="layer" x="48" y="54">BACKEND</text>
 
 	<g filter="url(#shadow)">
-		<rect class="box-strong" x="48" y="74" width="184" height="180" rx="12"/>
-		<rect class="box" x="252" y="74" width="214" height="78" rx="12"/>
-		<rect class="box" x="482" y="74" width="214" height="78" rx="12"/>
-		<rect class="box" x="712" y="74" width="214" height="78" rx="12"/>
-		<rect class="box" x="942" y="74" width="210" height="78" rx="12" stroke-dasharray="6 5"/>
-		<rect class="box-strong" x="252" y="168" width="900" height="86" rx="12"/>
+		<rect class="box" x="48" y="74" width="264" height="78" rx="12"/>
+		<rect class="box" x="328" y="74" width="264" height="78" rx="12"/>
+		<rect class="box" x="608" y="74" width="264" height="78" rx="12"/>
+		<rect class="box" x="888" y="74" width="264" height="78" rx="12" stroke-dasharray="6 5"/>
+		<rect class="box-strong" x="48" y="168" width="1104" height="86" rx="12"/>
 	</g>
 	<text text-anchor="middle">
-		<tspan class="label" x="140" y="196">Zarafa</tspan>
-		<tspan class="label" x="359" y="108">MailDir</tspan><tspan class="muted" x="359" y="132">Backend</tspan>
-		<tspan class="label" x="589" y="108">vCard</tspan><tspan class="muted" x="589" y="132">Backend</tspan>
-		<tspan class="label" x="819" y="108">IMAP</tspan><tspan class="muted" x="819" y="132">Backend</tspan>
-		<tspan class="label" x="1047" y="108">Your</tspan><tspan class="muted" x="1047" y="132">Application</tspan>
-		<tspan class="label" x="702" y="218">Differential Engine</tspan>
+		<tspan class="label" x="180" y="108">MailDir</tspan><tspan class="muted" x="180" y="132">Backend</tspan>
+		<tspan class="label" x="460" y="108">vCard</tspan><tspan class="muted" x="460" y="132">Backend</tspan>
+		<tspan class="label" x="740" y="108">IMAP</tspan><tspan class="muted" x="740" y="132">Backend</tspan>
+		<tspan class="label" x="1020" y="108">Your</tspan><tspan class="muted" x="1020" y="132">Application</tspan>
+		<tspan class="label" x="600" y="218">Differential Engine</tspan>
 	</text>
-
-	<use href="#server" x="140" y="140"/>
 
 	<!-- Z-Push -->
 	<g filter="url(#shadow)">
@@ -75,13 +66,11 @@
 	<text class="layer" x="48" y="424">FRONTEND</text>
 
 	<g filter="url(#shadow)">
-		<rect class="box" x="48" y="444" width="200" height="62" rx="12"/>
-		<rect class="box" x="264" y="444" width="888" height="62" rx="12"/>
+		<rect class="box" x="48" y="444" width="1104" height="62" rx="12"/>
 		<rect class="box-strong" x="48" y="520" width="1104" height="62" rx="12"/>
 	</g>
 	<text text-anchor="middle">
-		<tspan class="label-sm" x="148" y="481">PHP-MAPI</tspan>
-		<tspan class="label-sm" x="708" y="481">PHP (mod_php / php-fpm)</tspan>
+		<tspan class="label-sm" x="600" y="481">PHP (mod_php / php-fpm)</tspan>
 		<tspan class="label-sm" x="600" y="557">Webserver (apache2 / nginx / lighttpd)</tspan>
 	</text>
 

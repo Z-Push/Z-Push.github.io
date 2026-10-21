@@ -10,7 +10,9 @@ Images used by old posts stay under `wp-content/uploads/` so their URLs do
 not change.
 
 Site settings in `_config.yml`: `title`, `description`, `logo`, `navigation`
-(the menu), `sidebar_posts` (Latest News count), and optionally `footer`
+(the menu), `sidebar_posts` (Latest News count), `sidebar_archive_older_than`
+(years before this are grouped under one entry in the sidebar Archives), and
+optionally `footer`
 (footer text) and `search.site` (the domain the search box limits results to,
 which defaults to the host in `url`).
 

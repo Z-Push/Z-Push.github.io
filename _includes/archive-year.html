@@ -1,0 +1,12 @@
+<li>
+	<details{% if include.open %} open{% endif %}>
+		<summary>{{ include.year.name }}</summary>
+		<ul>
+			{%- assign months = include.year.items | group_by_exp: "post", "post.date | date: '%m'" %}
+			{%- for month in months %}
+			{%- assign first = month.items | first %}
+			<li><a href="{{ '/archives/' | relative_url }}#{{ include.year.name }}-{{ month.name }}">{{ first.date | date: "%B %Y" }}</a></li>
+			{%- endfor %}
+		</ul>
+	</details>
+</li>

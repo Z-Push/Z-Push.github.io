@@ -6,6 +6,8 @@ Hello,
 
 We have just released Z-Push **2.7.7**.
 
+Install Z-Push 2.7.7 from the repo Releases (recommended): [Z-Push 2.7.7 release](https://github.com/Z-Hub/Z-Push/releases/tag/2.7.7).
+
 This release contains security fixes and general bug fixes, with no new major features. Everyone running 2.7.6 or earlier is encouraged to upgrade.
 
 **Security fixes**
@@ -29,13 +31,11 @@ The CalDAV and CardDAV backends now verify the DAV server's TLS certificate. By 
 - A PHP 8 error when a backend passes a non-string value for encoding no longer stops the whole sync.
 - A PHP deprecation warning on every request is fixed, along with an nginx configuration simplification and updated documentation links.
 
-Install Z-Push 2.7.7 from the repo Releases (recommended): [Z-Push Releases](https://github.com/Z-Hub/Z-Push/releases/tag/2.7.7).
-
 Thanks a lot to all Z-Push contributors! Your contributions are highly appreciated. A special thank you to [prasannavl](https://github.com/prasannavl), [mschering](https://github.com/mschering), [iredmail](https://github.com/iredmail), [darealShadow](https://github.com/darealShadow), [cremenescu](https://github.com/cremenescu) and [AlbertoSolaro](https://github.com/AlbertoSolaro), whose fixes are part of this release.
 
 Code changes since Z-Push 2.7.6: [https://github.com/Z-Hub/Z-Push/compare/2.7.6...2.7.7](https://github.com/Z-Hub/Z-Push/compare/2.7.6...2.7.7)
 
-Please share your experiences (positive and negative) and give feedback on the [discussion post](https://github.com/Z-Hub/Z-Push/discussions)!
+Please share your experiences (positive and negative) and give feedback on the [discussion post](https://github.com/Z-Hub/Z-Push/discussions/223)!
 
 Greetings,<br>
 Mat

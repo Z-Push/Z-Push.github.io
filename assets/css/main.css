@@ -146,6 +146,19 @@ hr {
 	clip: rect(0 0 0 0);
 }
 
+/* Page frame: on pages shorter than the window the footer sits at the bottom */
+
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+
+.site-main {
+	flex: 1 0 auto;
+}
+
 /* Header */
 
 .site-header {

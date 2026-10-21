@@ -146,6 +146,19 @@ hr {
 	clip: rect(0 0 0 0);
 }
 
+/* Page frame: on pages shorter than the window the footer sits at the bottom */
+
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+
+.site-main {
+	flex: 1 0 auto;
+}
+
 /* Header */
 
 .site-header {
@@ -285,7 +298,7 @@ hr {
 	grid-template-columns: minmax(0, 1fr) var(--sidebar);
 	gap: var(--gap);
 	padding-top: 48px;
-	padding-bottom: 72px;
+	padding-bottom: 32px;
 }
 
 .content {
@@ -460,6 +473,10 @@ hr {
 	font-size: 15px;
 }
 
+.widget:last-child {
+	margin-bottom: 0;
+}
+
 .widget-title {
 	margin: 0 0 12px;
 	padding-bottom: 10px;
@@ -601,7 +618,7 @@ hr {
 
 	.site-main .container {
 		padding-top: 32px;
-		padding-bottom: 48px;
+		padding-bottom: 24px;
 	}
 
 	.entry-content {

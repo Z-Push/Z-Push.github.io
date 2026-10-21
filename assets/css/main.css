@@ -500,6 +500,10 @@ hr {
 	padding: 3px 0;
 }
 
+.widget .archive-older > ul {
+	padding-left: 18px;
+}
+
 .widget summary {
 	color: var(--heading);
 	font-weight: 500;

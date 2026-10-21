@@ -11,20 +11,30 @@
 		<h4 class="widget-title">Archives</h4>
 		<ul>
 			{%- assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+			{%- assign older_than = site.sidebar_archive_older_than | default: 0 | plus: 0 %}
+			{%- assign older = "" | split: "" %}
 			{%- for year in years %}
+				{%- assign y = year.name | plus: 0 %}
+				{%- if y < older_than %}
+					{%- assign older = older | push: year %}
+				{%- else %}
+					{%- include archive-year.html year=year open=forloop.first %}
+				{%- endif %}
+			{%- endfor %}
+			{%- if older.size > 0 %}
+			{%- assign newest_old = older | first %}
+			{%- assign oldest_old = older | last %}
 			<li>
-				<details{% if forloop.first %} open{% endif %}>
-					<summary>{{ year.name }}</summary>
+				<details class="archive-older">
+					<summary>{{ oldest_old.name }} &ndash; {{ newest_old.name }}</summary>
 					<ul>
-						{%- assign months = year.items | group_by_exp: "post", "post.date | date: '%m'" %}
-						{%- for month in months %}
-						{%- assign first = month.items | first %}
-						<li><a href="{{ '/archives/' | relative_url }}#{{ year.name }}-{{ month.name }}">{{ first.date | date: "%B %Y" }}</a></li>
+						{%- for year in older %}
+						{%- include archive-year.html year=year %}
 						{%- endfor %}
 					</ul>
 				</details>
 			</li>
-			{%- endfor %}
+			{%- endif %}
 		</ul>
 	</section>
 </aside>
